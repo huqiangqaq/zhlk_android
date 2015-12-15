@@ -84,7 +84,7 @@ public class Wendu extends Activity {
 			}
 		});
 	}
-
+	//这是一段测试代码
 	Handler handler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
