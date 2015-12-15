@@ -37,7 +37,7 @@ public class MergeActivity extends TabActivity {
 		tabHost.setCurrentTab(0);
 		rg = (RadioGroup) findViewById(R.id.rg);
 		rg.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			
+
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 				
