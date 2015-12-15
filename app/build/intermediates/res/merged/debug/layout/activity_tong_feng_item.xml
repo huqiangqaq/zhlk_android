@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:background="@color/lightyellow"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备编号"/>
+    <EditText
+
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="南_窗_上_1"
+        android:id="@+id/et_num_item"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开到位"
+        android:id="@+id/tv_Status"/>
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_08"
+        />
+    <ImageButton
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_05"
+        android:id="@+id/ib_swift_01"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_07"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/icon_05"
+        android:id="@+id/ib_distance_01"/>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.enjoyor.soft"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zhlk_icon"
+        android:label="智慧粮库"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".system.login.LoginActivity"
+            android:label="智慧粮库">
+
+        </activity>
+        <activity android:name=".product.xungeng.ChaCangRecordActivity" />
+        <activity
+            android:name=".product.car.activity.StoreTask"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".product.megcenter.activity.MsgCenterActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".product.wenshidu.activity.Wendu" />
+        <activity android:name=".product.wenshidu.activity.Shidu" />
+        <activity android:name=".system.index.Menu" />
+        <activity android:name="com.htl.Zxing.decoding.CaptureActivity" />
+
+        <service android:name=".product.car.service.StoreMsgService" />
+        <service android:name=".product.xungeng.XunGengActivity" />
+
+        <activity
+            android:name=".product.megcenter.activity.MergeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".product.megcenter.activity.MsgWeiDuActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".product.chacang.ChooseNOactivity" />
+        <activity android:name=".product.chacang.ChacangActivity" />
+        <activity android:name=".product.xungeng.XunGengActivity" />
+        <activity android:name=".product.nfcwirte.Activity_writerfid" />
+        <activity android:name=".product.car.activity.RightContent" />
+
+        <!-- NFC引用2015-07-24  xiandqw -->
+        <activity
+            android:name="cilico.tools.Nfcreceive"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/BackgroundOnly">
+            <intent-filter>
+                <action android:name="com.lql.service.ServiceDemo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <!-- NFC -->
+
+        <activity android:name=".product.TongFeng.TongFengActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

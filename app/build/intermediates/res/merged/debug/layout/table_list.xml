@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="19dp" >
+
+    <EditText 
+        android:id="@+id/ed_sm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <Button 
+        android:id="@+id/bt_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="条形码扫描"
+        android:layout_below="@id/ed_sm"/>
+    <Button 
+        android:id="@+id/bt_ql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清零"
+        android:layout_below="@id/ed_sm"
+        android:layout_toRightOf="@id/bt_sm"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0000ff" 
+        android:id="@+id/one"
+        android:layout_below="@id/bt_sm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_below="@id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:background="#0000ff" />
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="3"
+		    android:gravity="center"
+		    android:textSize="20sp"
+		    android:text="药品名称"/>
+
+		<TextView
+		    android:layout_width="1dp"
+		    android:layout_height="match_parent"
+		    android:background="#0000ff" />
+
+        <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="4"
+		    android:gravity="center"
+		    android:textSize="20sp"
+		    android:text="单价/元"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#0000ff" />
+        <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="4"
+		    android:gravity="center"
+		    android:textSize="20sp"
+		    android:text="数量/个"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#0000ff" />
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/two"
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0000ff"/>
+	<ListView 
+	    android:layout_below="@id/three"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="100dp"
+	    android:id="@+id/listview"></ListView>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginBottom="30dp"
+	    android:layout_alignParentBottom="true">
+	    
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.enjoyor.soft.product.TongFeng.TongFengActivity">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仓库编号"
+            />
+        <Spinner
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            ></Spinner>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:src="@drawable/tittle"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/orangered"
+        android:gravity="center">
+        
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="全部开启"
+            android:layout_weight="1"
+            android:background="@color/darkorange"
+            android:id="@+id/open_all"/>
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="全部关闭"
+            android:layout_weight="1"
+            android:background="@color/darkorange"
+            android:id="@+id/close_all"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/silver">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风机/窗状态控制"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开关到位"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远程/就地"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scrollbars="vertical"
+        android:id="@+id/Swiperefreshlayout">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/lv_Content">
+
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/lightgray"
+        android:gravity="center">
+        
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/orangered"
+            android:text="确定"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/btn_confrim"
+            />
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/orangered"
+            android:text="取消"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:id="@+id/btn_cancel"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tongfeng_ip1"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tongfeng_ip2"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tongfeng_ip3"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tongfeng_ip4"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:id="@+id/btn_submit"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
