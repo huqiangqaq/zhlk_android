@@ -16,8 +16,21 @@ public class JsonUtil {
 
     public static List<TongFeng> parseJson(String json) {   //定义flag，根据仓库编号获取相应的json数据
         try {
-            JSONArray array = new JSONArray(json);
+            JSONObject object = new JSONObject();
+            JSONArray array = object.getJSONArray("data");
             return JSON.parseArray(array.toString(), TongFeng.class);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static Object[] parseCangkuJson(String json){
+        try {
+            JSONObject object = new JSONObject();
+            JSONArray array  = object.getJSONArray("data");
+           // JSONArray array = new JSONArray(json);
+            return JSON.parseArray(array.toString()).toArray();
         } catch (JSONException e) {
             e.printStackTrace();
         }

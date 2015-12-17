@@ -27,6 +27,7 @@ import org.json.JSONObject;
 import org.json.JSONStringer;
 
 import java.security.Policy;
+import java.util.Arrays;
 import java.util.List;
 
 /**
