@@ -56,7 +56,7 @@ public class OpenAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         tongFeng = list.get(position);
-        viewHolder.etName.setText(tongFeng.getTfBarnDevicesNo().toString());   //设备编号
+        viewHolder.etName.setText(tongFeng.getChineseName().toString());   //设备编号
         viewHolder.tv_Status.setText(tongFeng.getStatus1().toString());
         viewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
         if ("关闭".equals(tongFeng.getReMoteControl())) {

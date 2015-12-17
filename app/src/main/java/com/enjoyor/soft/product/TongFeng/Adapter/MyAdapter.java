@@ -79,9 +79,9 @@ public class MyAdapter extends BaseAdapter {
         }
         tongFeng = tongFengList.get(position);
         Log.i("123++++++++++", tongFeng.getTfBarnDevicesNo().toString());
-        viewHolder.etName.setText(tongFeng.getTfBarnDevicesNo().toString());   //设备编号
+        viewHolder.etName.setText(tongFeng.getChineseName().toString());   //设备编号
         viewHolder.tv_Status.setText(tongFeng.getStatus1().toString());
-
+        viewHolder.tv_Msg.setText(tongFeng.getMsg().toString());
         /**
          * 组件初始化
          */

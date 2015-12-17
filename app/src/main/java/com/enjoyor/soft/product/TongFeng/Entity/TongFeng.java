@@ -5,32 +5,35 @@ package com.enjoyor.soft.product.TongFeng.Entity;
  */
 public class TongFeng {
 
-   private int Id;
+    private int Id;
     private String BarnNo;
     private String tfBarnDevicesNo;
-    private String  code;
+    private String code;
     private String Status1;
     private String ReMoteControl;
+    private String ChineseName;
     private String Msg;
 
     public TongFeng() {
     }
 
-    public TongFeng(int id, String barnNo, String tfBarnDevicesNo, String code, String status1, String reMoteControl, String msg) {
+    public TongFeng(int id, String barnNo, String tfBarnDevicesNo, String code, String status1, String reMoteControl, String chineseName, String msg) {
         Id = id;
         BarnNo = barnNo;
         this.tfBarnDevicesNo = tfBarnDevicesNo;
         this.code = code;
         Status1 = status1;
         ReMoteControl = reMoteControl;
+        ChineseName = chineseName;
         Msg = msg;
     }
 
-    public TongFeng(String barnNo, String tfBarnDevicesNo, String status1, String reMoteControl, String msg) {
+    public TongFeng(String barnNo, String tfBarnDevicesNo, String status1, String reMoteControl, String chineseName, String msg) {
         BarnNo = barnNo;
         this.tfBarnDevicesNo = tfBarnDevicesNo;
         Status1 = status1;
         ReMoteControl = reMoteControl;
+        ChineseName = chineseName;
         Msg = msg;
     }
 
@@ -82,6 +85,14 @@ public class TongFeng {
         ReMoteControl = reMoteControl;
     }
 
+    public String getChineseName() {
+        return ChineseName;
+    }
+
+    public void setChineseName(String chineseName) {
+        ChineseName = chineseName;
+    }
+
     public String getMsg() {
         return Msg;
     }
@@ -99,6 +110,7 @@ public class TongFeng {
                 ", code='" + code + '\'' +
                 ", Status1='" + Status1 + '\'' +
                 ", ReMoteControl='" + ReMoteControl + '\'' +
+                ", ChineseName='" + ChineseName + '\'' +
                 ", Msg='" + Msg + '\'' +
                 '}';
     }
