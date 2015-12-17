@@ -41,10 +41,12 @@ public class MyAdapter extends BaseAdapter {
     private TongFeng tongFeng;
     private ViewHolder viewHolder;
 
+
     //private int position;               //当前点击item的position
     public MyAdapter(Context context, List<TongFeng> tongFengList) {
         this.tongFengList = tongFengList;
         this.context = context;
+
     }
     @Override
     public int getCount() {
@@ -70,13 +72,14 @@ public class MyAdapter extends BaseAdapter {
             viewHolder.ib_swift = (ImageButton) convertView.findViewById(R.id.ib_swift);
             viewHolder.ib_distance = (ImageButton) convertView.findViewById(R.id.ib_distance);
             viewHolder.tv_Status = (TextView) convertView.findViewById(R.id.tv_Status);
+            viewHolder.tv_Msg = (TextView) convertView.findViewById(R.id.tv_Msg);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         tongFeng = tongFengList.get(position);
-        Log.i("123++++++++++", tongFeng.getBarnName().toString());
-        viewHolder.etName.setText(tongFeng.getBarnName().toString());   //设备编号
+        Log.i("123++++++++++", tongFeng.getTfBarnDevicesNo().toString());
+        viewHolder.etName.setText(tongFeng.getTfBarnDevicesNo().toString());   //设备编号
         viewHolder.tv_Status.setText(tongFeng.getStatus1().toString());
 
         /**
@@ -85,14 +88,14 @@ public class MyAdapter extends BaseAdapter {
         if ("开到位".equals(tongFeng.getStatus1())) {  //开状态
             viewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
             status = true;
-        } else if ("关到位".equals(tongFeng.getStatus1()) || "停止".equals(tongFeng.getStatus1())) {//关状态
+        } else if ("关到位".equals(tongFeng.getStatus1()) || "异常".equals(tongFeng.getStatus1())) {//关状态
             viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_05);
             status = false;
         }
-        if ("远程".equals(tongFeng.getReMoteControl())) {
-            viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_06);
-        } else {
+        if ("关闭".equals(tongFeng.getReMoteControl())) {
             viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_05);
+        } else {
+            viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_06);
         }
         viewHolder.ib_swift.setTag(position);
         //给BUTTON设置点击事件，添加点击事件后listview将失去焦点 ，需要把button的焦点去掉
@@ -109,18 +112,12 @@ public class MyAdapter extends BaseAdapter {
 //                                .key("ReMoteControl").value(tongFengList.get(position).getReMoteControl()).endObject();
                     RequestParams params = new RequestParams();
                     params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
-                    params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getBarnName());
+                    params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
                     params.addBodyParameter("Status1", "0");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    if ("CK020".equals(tongFengList.get(position).getBarnNo())) {
-//                            HttpUtil.getJsonFromNet(context, Constants.URL_TONGFENG_1, vehicle);
-                        HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
+                    HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
                                 + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
 
-                    } else if ("CK021".equals(tongFengList.get(position).getBarnNo())) {
-                        HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
-                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
-                    }
                     finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
                     status = false;
                 } else {
@@ -131,16 +128,11 @@ public class MyAdapter extends BaseAdapter {
 //                                .key("远程到位").value(tongFengList.get(position).getReMoteControl()).endObject();
                     RequestParams params = new RequestParams();
                     params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
-                    params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getBarnName());
+                    params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
                     params.addBodyParameter("Status1", "0");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    if ("CK020".equals(tongFengList.get(position).getBarnNo())) {
-                        HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
-                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
-                    } else if ("CK021".equals(tongFengList.get(position).getBarnNo())) {
-                        HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
-                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
-                    }
+                    HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
+                               + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
                     finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
                     status = true;
                 }
@@ -154,5 +146,6 @@ public class MyAdapter extends BaseAdapter {
         public ImageButton ib_swift;
         public ImageButton ib_distance;
         public TextView tv_Status;
+        public TextView tv_Msg;
     }
 }

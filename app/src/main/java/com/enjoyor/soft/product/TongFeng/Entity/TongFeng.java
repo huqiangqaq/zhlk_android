@@ -6,32 +6,32 @@ package com.enjoyor.soft.product.TongFeng.Entity;
 public class TongFeng {
 
    private int Id;
+    private String BarnNo;
     private String tfBarnDevicesNo;
-    private String BarnName;
-    private String code;
+    private String  code;
     private String Status1;
     private String ReMoteControl;
-    private String BarnNo;
+    private String Msg;
 
     public TongFeng() {
     }
 
-    public TongFeng(String tfBarnDevicesNo, String tfBarnDevicesName, String status1, String reMoteControl, String barnNo) {
-        this.tfBarnDevicesNo = tfBarnDevicesNo;
-        this.BarnName = tfBarnDevicesName;
-        Status1 = status1;
-        ReMoteControl = reMoteControl;
-        BarnNo = barnNo;
-    }
-
-    public TongFeng(int id, String tfBarnDevicesNo, String barnName, String code, String status1, String reMoteControl, String barnNo) {
+    public TongFeng(int id, String barnNo, String tfBarnDevicesNo, String code, String status1, String reMoteControl, String msg) {
         Id = id;
+        BarnNo = barnNo;
         this.tfBarnDevicesNo = tfBarnDevicesNo;
-        BarnName = barnName;
         this.code = code;
         Status1 = status1;
         ReMoteControl = reMoteControl;
+        Msg = msg;
+    }
+
+    public TongFeng(String barnNo, String tfBarnDevicesNo, String status1, String reMoteControl, String msg) {
         BarnNo = barnNo;
+        this.tfBarnDevicesNo = tfBarnDevicesNo;
+        Status1 = status1;
+        ReMoteControl = reMoteControl;
+        Msg = msg;
     }
 
     public int getId() {
@@ -42,20 +42,20 @@ public class TongFeng {
         Id = id;
     }
 
+    public String getBarnNo() {
+        return BarnNo;
+    }
+
+    public void setBarnNo(String barnNo) {
+        BarnNo = barnNo;
+    }
+
     public String getTfBarnDevicesNo() {
         return tfBarnDevicesNo;
     }
 
     public void setTfBarnDevicesNo(String tfBarnDevicesNo) {
         this.tfBarnDevicesNo = tfBarnDevicesNo;
-    }
-
-    public String getBarnName() {
-        return BarnName;
-    }
-
-    public void setBarnName(String barnName) {
-        BarnName = barnName;
     }
 
     public String getCode() {
@@ -82,24 +82,24 @@ public class TongFeng {
         ReMoteControl = reMoteControl;
     }
 
-    public String getBarnNo() {
-        return BarnNo;
+    public String getMsg() {
+        return Msg;
     }
 
-    public void setBarnNo(String barnNo) {
-        BarnNo = barnNo;
+    public void setMsg(String msg) {
+        Msg = msg;
     }
 
     @Override
     public String toString() {
         return "TongFeng{" +
                 "Id=" + Id +
+                ", BarnNo='" + BarnNo + '\'' +
                 ", tfBarnDevicesNo='" + tfBarnDevicesNo + '\'' +
-                ", BarnName='" + BarnName + '\'' +
                 ", code='" + code + '\'' +
                 ", Status1='" + Status1 + '\'' +
                 ", ReMoteControl='" + ReMoteControl + '\'' +
-                ", BarnNo='" + BarnNo + '\'' +
+                ", Msg='" + Msg + '\'' +
                 '}';
     }
 }
