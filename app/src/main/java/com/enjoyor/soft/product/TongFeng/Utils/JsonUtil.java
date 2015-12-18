@@ -16,7 +16,7 @@ public class JsonUtil {
 
     public static List<TongFeng> parseJson(String json) {   //定义flag，根据仓库编号获取相应的json数据
         try {
-            JSONObject object = new JSONObject();
+            JSONObject object = new JSONObject(json);
             JSONArray array = object.getJSONArray("data");
             return JSON.parseArray(array.toString(), TongFeng.class);
         } catch (JSONException e) {
@@ -27,7 +27,7 @@ public class JsonUtil {
 
     public static Object[] parseCangkuJson(String json){
         try {
-            JSONObject object = new JSONObject();
+            JSONObject object = new JSONObject(json);
             JSONArray array  = object.getJSONArray("data");
            // JSONArray array = new JSONArray(json);
             return JSON.parseArray(array.toString()).toArray();
