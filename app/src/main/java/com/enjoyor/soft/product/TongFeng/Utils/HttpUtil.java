@@ -57,7 +57,7 @@ public class HttpUtil {
 
             @Override
             public void onFailure(HttpException e, String s) {
-                //Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
             }
         });
     }
