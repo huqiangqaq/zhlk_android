@@ -17,6 +17,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.enjoyor.soft.R;
+import com.enjoyor.soft.common.Constants;
+import com.enjoyor.soft.common.HttpUtils;
 import com.enjoyor.soft.product.TongFeng.Adapter.CloseAdapter;
 import com.enjoyor.soft.product.TongFeng.Adapter.MyAdapter;
 import com.enjoyor.soft.product.TongFeng.Adapter.OpenAdapter;
@@ -65,44 +67,66 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                Log.i("1233++++++++++++", CangKuIP);
                 //获取仓库数目
                 HttpUtil.getJsonFromNet(getApplicationContext(), CangKuIP, new HttpUtil.GetJsonCallBack() {
                     @Override
                     public void callback(String jsonStr) {
-                        Cangku = (String[]) JsonUtil.parseCangkuJson(spilt(jsonStr));
-                    }
-                });
-                arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, Cangku);
-                spinner.setAdapter(arrayAdapter);
+                        Log.i("1234+++++++++++++++++", jsonStr);
+                        Cangku = JsonUtil.parseCangkuJson(spilt(jsonStr));
+                        Log.i("12345+++++++++++", spilt(jsonStr));
+                        arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, Cangku);
+                        spinner.setAdapter(arrayAdapter);
 
-                HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[0], new HttpUtil.GetJsonCallBack() {
-                    @Override
-                    public void callback(String jsonStr) {
-                        initData(spilt(jsonStr));
-                    }
-                });
-                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        cangkuNum = position;
-                        Log.i("123+++++++++++++++", position + "," + spinner.getSelectedItemPosition());
-                        HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[position], new HttpUtil.GetJsonCallBack() {
+                        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
-                            public void callback(String jsonStr) {
-                                //解析数据
-                                initData(spilt(jsonStr));
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                cangkuNum = position;
+                                Log.i("123+++++++++++++++", position + "," + spinner.getSelectedItemPosition());
+                                HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[position], new HttpUtil.GetJsonCallBack() {
+                                    @Override
+                                    public void callback(String jsonStr) {
+                                        //解析数据
+                                        initData(spilt(jsonStr));
+
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {
 
                             }
                         });
-                    }
 
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {
+                        //下拉监听事件
+                        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                            @Override
+                            public void onRefresh() {
+                                Log.i("test", "onrefresh");
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+
+                                        HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[cangkuNum], new HttpUtil.GetJsonCallBack() {
+                                            @Override
+                                            public void callback(String jsonStr) {
+                                                initData(spilt(jsonStr));
+                                                swipeRefreshLayout.setRefreshing(false);
+                                            }
+                                        });
+                                    }
+                                }, 2000);
+                            }
+                        });
 
                     }
                 });
+
+
             }
         });
+
         preferenceService = new PreferenceService(getApplicationContext());
         //取出存储的IP地址
         map = new HashMap<>();
@@ -125,26 +149,6 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                         .getDisplayMetrics()));
 
 
-        //下拉监听事件
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                Log.i("test", "onrefresh");
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[cangkuNum], new HttpUtil.GetJsonCallBack() {
-                            @Override
-                            public void callback(String jsonStr) {
-                                initData(spilt(jsonStr));
-                                swipeRefreshLayout.setRefreshing(false);
-                            }
-                        });
-                    }
-                }, 2000);
-            }
-        });
         tongFengList = new ArrayList<>();
     }
 
@@ -245,8 +249,9 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
     }
 
     public String spilt(String jsonStr) {
+        //Log.i("123++++++++++++",jsonStr);
         String a[] = jsonStr.split(">");
-        String b[] = a[2].split("<");
+        String b[] = a[1].split("<");
         String json = b[0];
         return json;
     }

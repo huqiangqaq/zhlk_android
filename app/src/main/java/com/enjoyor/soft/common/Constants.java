@@ -16,9 +16,10 @@ import android.content.SharedPreferences;
  */
 public class Constants {
 //192.168.1.177
+	public static String JUANPI_AD="http://api.juanpi.com/product/juanpi/lists?n_utm=101228&n_api_version=2.1&n_app_version=3.2.2.1&n_newuser=1&n_catname=all&n_platform=Android&n_dataversion=1431920911284&n_app_name=zhe&n_pagenum=20&n_page=";
 	//TongFeng接口
-	public static String URL_TONGFENG_1 = "http://183.247.179.238:7000/twenty.html";
-	public static String URL_TONGFENG_2 = "http://183.247.179.238:7000/twentyOne.html";
+	public static String URL_TONGFENG_1 = "http://192.168.1.121:7000/getAllBarnNameList.html";
+	public static String URL_TONGFENG_2 = "http://192.168.1.121:7000/getBarnDevList/CK001";
 	//巡更提交
 	//userName=test&password=admin&likeStr=111
 	public static String URL_XG_POST = "cargoAjax!patrol.htm?";
