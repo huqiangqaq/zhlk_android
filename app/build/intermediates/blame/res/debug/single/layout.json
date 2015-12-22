@@ -64,12 +64,12 @@
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_xungeng.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wendu.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_wendu.xml"
-    },
-    {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_page.xml",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_page.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wendu.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_wendu.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_list_item.xml",
