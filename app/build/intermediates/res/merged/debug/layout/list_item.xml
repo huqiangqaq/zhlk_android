@@ -9,27 +9,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设备编号"
         android:textColor="@color/black"/>
     <EditText
-
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:enabled="false"
-
         android:id="@+id/etName"
         android:textColor="@color/black"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:id="@+id/tv_Status"
         android:textColor="@color/black"/>
     <ImageView
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_08"
@@ -45,7 +41,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:src="@drawable/icon_07"/>
     <ImageButton
         android:layout_width="wrap_content"
@@ -53,5 +49,11 @@
         android:layout_marginLeft="5dp"
         android:background="@drawable/icon_05"
         android:id="@+id/ib_distance"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="窗户开到位"
+        android:id="@+id/tv_Msg"
+        android:textColor="@color/black"/>
 
 </LinearLayout>
