@@ -61,7 +61,7 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
             public void onClick(View v) {
                 TONGFENG_IP = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString() + ":7000/getBarnDevList/";
                 TONGFENG_IP2 = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString()+":7000/";
-                Log.i("123456++++++++++++++++++++",TONGFENG_IP2);
+                Log.i("123456+++++++++++++",TONGFENG_IP2);
                 CangKuIP = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString() + ":7000/getAllBarnNameList.html";
                 try {
                     //保存上一次输入的IP地址
