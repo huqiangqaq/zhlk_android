@@ -40,12 +40,14 @@ public class MyAdapter extends BaseAdapter {
     private boolean status = false;   //开关的状态，默认为关
     private TongFeng tongFeng;
     private ViewHolder viewHolder;
+    private String tongfengIP;
 
 
     //private int position;               //当前点击item的position
-    public MyAdapter(Context context, List<TongFeng> tongFengList) {
+    public MyAdapter(Context context, List<TongFeng> tongFengList,String tongfengIP) {
         this.tongFengList = tongFengList;
         this.context = context;
+        this.tongfengIP = tongfengIP;
 
     }
     @Override
@@ -115,7 +117,7 @@ public class MyAdapter extends BaseAdapter {
                     params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
                     params.addBodyParameter("Status1", "0");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
+                    HttpUtil.GetJsonFromNet(context, tongfengIP+"OpenClose/" + tongFengList.get(position).getBarnNo()
                                 + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
 
                     finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
@@ -131,10 +133,11 @@ public class MyAdapter extends BaseAdapter {
                     params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
                     params.addBodyParameter("Status1", "0");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    HttpUtil.GetJsonFromNet(context, "http://192.168.1.177:7000/OpenClose/" + tongFengList.get(position).getBarnNo()
+                    HttpUtil.GetJsonFromNet(context, tongfengIP+"OpenClose/"+ tongFengList.get(position).getBarnNo()
                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
                     finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
                     status = true;
+                    //"http://192.168.1.177:7000/OpenClose/"
                 }
             }
         });

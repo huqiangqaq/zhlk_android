@@ -44,7 +44,7 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
     private ArrayAdapter arrayAdapter;
     private EditText tongfeng_ip1, tongfeng_ip2, tongfeng_ip3, tongfeng_ip4;
     private Button btn_Submit;
-    private String TONGFENG_IP;
+    private String TONGFENG_IP,TONGFENG_IP2;
     private String CangKuIP;
     private SwipeRefreshLayout swipeRefreshLayout;
     private int cangkuNum = 0;    //仓库编号
@@ -60,6 +60,8 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 TONGFENG_IP = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString() + ":7000/getBarnDevList/";
+                TONGFENG_IP2 = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString()+":7000/";
+                Log.i("123456++++++++++++++++++++",TONGFENG_IP2);
                 CangKuIP = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString() + ":7000/getAllBarnNameList.html";
                 try {
                     //保存上一次输入的IP地址
@@ -75,7 +77,7 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                         Log.i("1234+++++++++++++++++", jsonStr);
                         Cangku = JsonUtil.parseCangkuJson(spilt(jsonStr));
                         Log.i("12345+++++++++++", spilt(jsonStr));
-                        arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, Cangku);
+                        arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, Cangku);
                         spinner.setAdapter(arrayAdapter);
 
                         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -260,7 +262,7 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
         tongFengList = JsonUtil.parseJson(jsonStr);
         Log.i("123+++++++++", tongFengList.toString());
         //创建适配器对象
-        adapter = new MyAdapter(getApplicationContext(), tongFengList);
+        adapter = new MyAdapter(getApplicationContext(), tongFengList,TONGFENG_IP2);
         lv_Content.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
