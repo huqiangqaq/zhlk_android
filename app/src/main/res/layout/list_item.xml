@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:orientation="horizontal"
     android:layout_margin="10dp"
     android:gravity="center"
     android:background="@color/lightyellow"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,10 +30,10 @@
         android:layout_height="wrap_content"
         android:src="@drawable/icon_08"
         />
-    <ImageButton
+    <Button
         android:layout_marginLeft="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
         android:background="@drawable/icon_05"
         android:id="@+id/ib_swift"
         android:focusable="false"
@@ -43,9 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:src="@drawable/icon_07"/>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="20dp"
         android:layout_marginLeft="5dp"
         android:background="@drawable/icon_05"
         android:id="@+id/ib_distance"

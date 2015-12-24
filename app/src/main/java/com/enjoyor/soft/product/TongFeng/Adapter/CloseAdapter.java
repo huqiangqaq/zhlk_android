@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -47,10 +48,10 @@ public class CloseAdapter extends BaseAdapter{
         if (convertView == null) {
             viewHolder = new ViewHolder();
             convertView = LayoutInflater.from(context).inflate(R.layout.list_item, null);
-            viewHolder.ib_swift = (ImageButton) convertView.findViewById(R.id.ib_swift);
+            viewHolder.ib_swift = (Button) convertView.findViewById(R.id.ib_swift);
             viewHolder.etName = (EditText) convertView.findViewById(R.id.etName);
             viewHolder.tv_Status = (TextView) convertView.findViewById(R.id.tv_Status);
-            viewHolder.ib_distance = (ImageButton) convertView.findViewById(R.id.ib_distance);
+            viewHolder.ib_distance = (Button) convertView.findViewById(R.id.ib_distance);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -67,9 +68,9 @@ public class CloseAdapter extends BaseAdapter{
         return convertView;
     }
     class ViewHolder{
-        public ImageButton ib_swift;
+        public Button ib_swift;
         public EditText etName;
         public TextView tv_Status;
-        public ImageButton ib_distance;
+        public Button ib_distance;
     }
 }

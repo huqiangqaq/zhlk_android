@@ -23,7 +23,7 @@ MERGED from [com.android.support:support-v4:21.0.3] D:\Android\Android Projects\
 		INJECTED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:8:9-34
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:8:9-35
 		INJECTED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.NFC
