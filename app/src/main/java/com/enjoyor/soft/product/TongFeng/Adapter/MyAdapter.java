@@ -39,7 +39,7 @@ public class MyAdapter extends BaseAdapter {
     private Context context;
     private boolean status = false;   //开关的状态，默认为关
     private TongFeng tongFeng;
-    //private ViewHolder viewHolder;
+    private ViewHolder viewHolder;
     private String tongfengIP;
 
 
@@ -67,7 +67,7 @@ public class MyAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        final ViewHolder viewHolder;
+        //final ViewHolder viewHolder;
         if (convertView == null) {
              viewHolder = new ViewHolder();
             convertView = LayoutInflater.from(context).inflate(R.layout.list_item, null);
@@ -107,6 +107,7 @@ public class MyAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 if (status) {
+
                     int position = (int) v.getTag();
                     //上传参数给服务器，需加上仓库编号
 //                        JSONStringer vehicle = new JSONStringer().object().key("BarnNo").value(tongFengList.get(position).getBarnNo()).key("tfBarnDevicesNo").value(tongFengList.get(position).getBarnName())
@@ -116,10 +117,10 @@ public class MyAdapter extends BaseAdapter {
                     RequestParams params = new RequestParams();
                     params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
                     params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
-                    params.addBodyParameter("Status1", "0");
+                    params.addBodyParameter("Status1", "1");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
                     HttpUtil.GetJsonFromNet(context, tongfengIP+"OpenClose/" + tongFengList.get(position).getBarnNo()
-                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
+                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params);
 
                     finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
                     status = false;
@@ -132,10 +133,10 @@ public class MyAdapter extends BaseAdapter {
                     RequestParams params = new RequestParams();
                     params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
                     params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
-                    params.addBodyParameter("Status1", "1");
+                    params.addBodyParameter("Status1", "0");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
                     HttpUtil.GetJsonFromNet(context, tongfengIP+"OpenClose/"+ tongFengList.get(position).getBarnNo()
-                               + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params);
+                               + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
                     finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
                     status = true;
                     //"http://192.168.1.177:7000/OpenClose/"

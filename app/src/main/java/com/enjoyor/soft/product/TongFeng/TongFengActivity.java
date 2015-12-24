@@ -22,6 +22,7 @@ import com.enjoyor.soft.common.HttpUtils;
 import com.enjoyor.soft.product.TongFeng.Adapter.CloseAdapter;
 import com.enjoyor.soft.product.TongFeng.Adapter.MyAdapter;
 import com.enjoyor.soft.product.TongFeng.Adapter.OpenAdapter;
+import com.enjoyor.soft.product.TongFeng.Adapter.SpinnerAdapter;
 import com.enjoyor.soft.product.TongFeng.Entity.TongFeng;
 import com.enjoyor.soft.product.TongFeng.Utils.HttpUtil;
 import com.enjoyor.soft.product.TongFeng.Utils.JsonUtil;
@@ -41,7 +42,8 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
     private MyAdapter adapter;
     private Button open_all, close_all, btn_confrim, btn_cancel;
     private String[] Cangku = {};
-    private ArrayAdapter arrayAdapter;
+    //private ArrayAdapter arrayAdapter;
+    private SpinnerAdapter arrayAdapter;
     private EditText tongfeng_ip1, tongfeng_ip2, tongfeng_ip3, tongfeng_ip4;
     private Button btn_Submit;
     private String TONGFENG_IP,TONGFENG_IP2;
@@ -77,9 +79,15 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                         Log.i("1234+++++++++++++++++", jsonStr);
                         Cangku = JsonUtil.parseCangkuJson(spilt(jsonStr));
                         Log.i("12345+++++++++++", spilt(jsonStr));
-                        arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, Cangku);
+                        arrayAdapter = new SpinnerAdapter(getApplicationContext(), android.R.layout.simple_spinner_item, Cangku);
                         spinner.setAdapter(arrayAdapter);
-
+                        HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[0], new HttpUtil.GetJsonCallBack() {
+                            @Override
+                            public void callback(String jsonStr) {
+                                //解析数据
+                                initData(spilt(jsonStr));
+                            }
+                        });
                         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

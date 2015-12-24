@@ -75,6 +75,7 @@ public class HttpUtil {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
                 //jsonCallBack.callback(responseInfo.result);
+                Log.i("NET",responseInfo.result);
                 
             }
 
