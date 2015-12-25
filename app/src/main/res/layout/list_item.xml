@@ -5,8 +5,7 @@
     android:orientation="horizontal"
     android:layout_margin="10dp"
     android:gravity="center"
-    android:background="@color/lightyellow"
-    >
+    android:background="@color/lightyellow">
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,7 +48,7 @@
         android:layout_marginLeft="5dp"
         android:background="@drawable/icon_05"
         android:id="@+id/ib_distance"
-        android:focusable="false"/>
+       />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

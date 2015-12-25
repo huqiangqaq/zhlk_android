@@ -106,7 +106,7 @@ public class MyAdapter extends BaseAdapter {
         /**
          * 组件初始化
          */
-        if ("关闭".equals(tongFeng.getReMoteControl())) {
+        if ("就地".equals(tongFeng.getReMoteControl())) {
             viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_05);
         } else {
             viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_06);
@@ -133,10 +133,15 @@ public class MyAdapter extends BaseAdapter {
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
                     Log.i("NET++", tongFengList.get(position).getBarnNo()
                             + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl());
-                    HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position1).getBarnNo()
-                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params);
+                    HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
+                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
+                        @Override
+                        public void callback(String jsonStr) {
+                            finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
+                        }
+                    });
 
-                    finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
+
                     map.put(position,false);
 
                 } else {
@@ -153,8 +158,13 @@ public class MyAdapter extends BaseAdapter {
                     Log.i("NET++", tongFengList.get(position).getBarnNo()
                             + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl());
                     HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
-                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params);
-                    finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
+                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
+                        @Override
+                        public void callback(String jsonStr) {
+                            finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
+                        }
+                    });
+
 
                     map.put(position,true);
                     //"http://192.168.1.177:7000/OpenClose/"

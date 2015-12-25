@@ -199,7 +199,12 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                         params.addBodyParameter("BarnNo", Cangku[cangkuNum]);
                         params.addBodyParameter("Status", "OPENALL");
                         HttpUtil.GetJsonFromNet(getApplicationContext(), "http://192.168.1.177:7000/OpenClose/" + Cangku[cangkuNum]
-                                + "/OPENALL", params);
+                                + "/OPENALL", params, new HttpUtil.GetJsonCallBack() {
+                            @Override
+                            public void callback(String jsonStr) {
+
+                            }
+                        });
                         btn_confrim.setVisibility(View.INVISIBLE);
                         btn_cancel.setVisibility(View.INVISIBLE);
                     }
@@ -228,7 +233,12 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                         params.addBodyParameter("BarnNo", Cangku[cangkuNum]);
                         params.addBodyParameter("Status", "CLOSEALL");
                         HttpUtil.GetJsonFromNet(getApplicationContext(), "http://192.168.1.177:7000/OpenClose/" + Cangku[cangkuNum]
-                                + "/CLOSEALL", params);
+                                + "/CLOSEALL", params, new HttpUtil.GetJsonCallBack() {
+                            @Override
+                            public void callback(String jsonStr) {
+
+                            }
+                        });
                         btn_confrim.setVisibility(View.INVISIBLE);
                         btn_cancel.setVisibility(View.INVISIBLE);
 

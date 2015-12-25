@@ -69,12 +69,12 @@ public class HttpUtil {
      * @param url
      * @param params
      */
-    public static void GetJsonFromNet(final Context context, String url, final RequestParams params) {
+    public static void GetJsonFromNet(final Context context, String url, final RequestParams params, final GetJsonCallBack jsonCallBack ) {
         httpUtils = getHttpUtils();
         httpUtils.send(HttpRequest.HttpMethod.GET, url, params, new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                //jsonCallBack.callback(responseInfo.result);
+                jsonCallBack.callback(responseInfo.result);
                 Log.i("NET",responseInfo.result);
                 
             }
