@@ -81,13 +81,13 @@
     </LinearLayout>
     <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="280dp"
         android:scrollbars="vertical"
         android:id="@+id/Swiperefreshlayout">
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="280dp"
             android:id="@+id/lv_Content">
 
         </ListView>

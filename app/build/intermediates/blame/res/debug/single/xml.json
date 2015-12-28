@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\nfc_tech_filter.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\xml\\nfc_tech_filter.xml"
+    },
+    {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\nfc_tech_filter.xml",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\xml\\nfc_tech_filter.xml"
     }

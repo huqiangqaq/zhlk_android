@@ -1,67 +1,119 @@
 [
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_bac.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\login_bac.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_sel.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_sel.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\btn_selector.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_07.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_07.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\line.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cbk_logo.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\cbk_logo.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wendu.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\wendu.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_05.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_05.png"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\btn_selector.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_08.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_08.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_bg.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_bg.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\index_item_sel_1.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\index_item_sel_1.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bac_text.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\bac_text.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_about.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_about.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chengliang_info.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\chengliang_info.png"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tittle.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\tittle.png"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\top.png"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_log.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\app_log.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_icon_top.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\msg_icon_top.png"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\index_item_sel_1.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\index_item_sel_1.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shidu.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\shidu.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tittle.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\tittle.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\btn_selector.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_07.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_07.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhlk_icon.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\zhlk_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_06.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_06.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bac_text.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\bac_text.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhlk_icon.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\zhlk_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_exit.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_exit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_bg.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tittle.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\tittle.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_07.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_07.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_sel.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_sel.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_about.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_about.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wendu.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\wendu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chengliang_info.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\chengliang_info.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cheliang_scan.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\cheliang_scan.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_08.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_08.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_exit.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_exit.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_pressed.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_pressed.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\line.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_about.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_about.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_top.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\login_top.png"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_bac.xml",
@@ -72,20 +124,24 @@
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_06.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhlk_icon.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\zhlk_icon.png"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cbk_logo.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\cbk_logo.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\top.png"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cbk_logo.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\cbk_logo.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shidu.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\shidu.png"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_bac.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\item_bac.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_exit.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_exit.png"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_normal.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_normal.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wendu.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\wendu.png"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_normal.xml",
@@ -96,15 +152,67 @@
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\login_top.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cheliang_scan.png",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\cheliang_scan.png"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_bac.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\login_bac.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_sel.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_sel.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\top.png"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_pressed.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_pressed.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chengliang_info.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\chengliang_info.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\line.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_icon_top.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\msg_icon_top.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_bg.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\menu_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bac_text.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\bac_text.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cheliang_scan.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\cheliang_scan.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_item_corner_pressed.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\grid_item_corner_pressed.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_icon_top.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\msg_icon_top.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_05.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_05.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shidu.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\shidu.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_05.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\icon_05.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login_bac.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\login_bac.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_log.png",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\app_log.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\index_item_sel_1.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\drawable\\index_item_sel_1.xml"
     }
 ]

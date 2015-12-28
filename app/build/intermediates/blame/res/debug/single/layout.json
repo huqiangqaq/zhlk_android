@@ -1,55 +1,63 @@
 [
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_item.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\grid_item.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showtask.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\showtask.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_b.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_b.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wendu.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\wendu.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msgcenteractivity.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_msgcenteractivity.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nfcreceive.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\nfcreceive.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_items.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\list_items.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_c.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_c.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scanner.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_scanner.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_choose_item.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_choose_item.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_record.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_record.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\choose_no.xml",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\choose_no.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_store.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_store.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\right_content.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\right_content.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_tong_feng.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_tong_feng.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_xungeng.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_xungeng.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\menu.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_check.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_check.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_store.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_store.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_check.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_check.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\menu.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_items.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\list_items.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_choose_item.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_choose_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_writerfid.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_writerfid.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tong_feng.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_tong_feng.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shidu.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\shidu.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_list_item.xml",
@@ -60,79 +68,207 @@
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\list_item.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_xungeng.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_xungeng.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_page.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_page.xml"
-    },
-    {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wendu.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_wendu.xml"
-    },
-    {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_list_item.xml",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\msg_list_item.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_tabhost.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\msg_tabhost.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showtask.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\showtask.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tong_feng.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_tong_feng.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_xungeng.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_xungeng.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_list.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_list.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scanner.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_scanner.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\right_content.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\right_content.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tong_feng_item.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_tong_feng_item.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_activity.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_activity.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_writerfid.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_writerfid.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tong_feng_item.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_tong_feng_item.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_items.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\list_items.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_check.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_check.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_b.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_b.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msgweiduactivity.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_msgweiduactivity.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shidu.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\shidu.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\menu.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_item.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\grid_item.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tmactivity_main.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\tmactivity_main.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_choose_item.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_choose_item.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nfcreceive.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\nfcreceive.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_writerfid.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_writerfid.xml"
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wendu.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_wendu.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shidu.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\shidu.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wendu.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\wendu.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scanner.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_scanner.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_list.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\table_list.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tong_feng_item.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_tong_feng_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_store.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_store.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_activity.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_activity.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showtask.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\showtask.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_record.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_record.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_c.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\table_c.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_c.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_c.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wendu.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\wendu.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_tabhost.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\msg_tabhost.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msgcenteractivity.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_msgcenteractivity.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_activity.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_activity.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_list_item.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\msg_list_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_item.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\grid_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nfcreceive.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\nfcreceive.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msgcenteractivity.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_msgcenteractivity.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_tabhost.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\msg_tabhost.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_tong_feng.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_tong_feng.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_page.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_page.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msgweiduactivity.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_msgweiduactivity.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_page.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\table_page.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tong_feng.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_tong_feng.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wendu.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_wendu.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tmactivity_main.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\tmactivity_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tmactivity_main.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\tmactivity_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_b.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\table_b.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_tong_feng.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\fragment_tong_feng.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_a.xml",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_a.xml"
     },
     {
-        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chacang_record.xml",
-        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\chacang_record.xml"
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\right_content.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\right_content.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\choose_no.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\choose_no.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_list.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\table_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_list_item.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\table_list_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msgweiduactivity.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\layout\\activity_msgweiduactivity.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_a.xml",
+        "source": "D:\\AndroidStudioProjects\\zhlk_android\\app\\src\\main\\res\\layout\\table_a.xml"
     }
 ]
