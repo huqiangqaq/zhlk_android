@@ -58,7 +58,7 @@ public class Menu extends Activity {
         // 生成动态数组，并且转入数据
         ArrayList<HashMap<String, Object>> lstImageItem = new ArrayList<HashMap<String, Object>>();
         titles = new String[]{"温度管理", "湿度管理", "装卸货", "药品管理", "消息中心", "巡更",
-                "查仓", "查仓记录", "RFID写入"};
+                "查仓", "查仓记录", "RFID写入","手工通风控制"};
         String ts = getIntent().getStringExtra("moudles");
         if (ts != null && ts.contains(",")) {
             titles = ts.split(",");
@@ -90,9 +90,9 @@ public class Menu extends Activity {
                 ids[i] = R.drawable.xungeng_icon;
             } else if ("RFID写入".equalsIgnoreCase(titles[i])) {
                 ids[i] = R.drawable.xungeng_icon;
-            } //else if ("手工通风控制".equalsIgnoreCase(titles[i])) {
-//                ids[i] = R.drawable.xungeng_icon;
-//            }
+            } else if ("手工通风控制".equalsIgnoreCase(titles[i])) {
+                ids[i] = R.drawable.xungeng_icon;
+            }
         }
         for (int i = 0; i < ids.length; i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
@@ -172,13 +172,13 @@ public class Menu extends Activity {
                     intent.putExtra("password", password);
                     intent.putExtra("webhead", Constants.getWebHead(Menu.this));
                     startActivity(intent);
-                    ;
+
                 } else if (titles[position].equalsIgnoreCase("RFID写入")) {
                     startActivity(new Intent(Menu.this,
                             Activity_writerfid.class));
-                } //else if (titles[position].equalsIgnoreCase("手工通风控制")) {
-//                    startActivity(new Intent(Menu.this, TongFengActivity.class));
-//                }
+                } else if (titles[position].equalsIgnoreCase("手工通风控制")) {
+                    startActivity(new Intent(Menu.this, TongFengActivity.class));
+                }
             }
         });
         ab = new AlertDialog.Builder(Menu.this);

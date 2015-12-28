@@ -52,6 +52,7 @@ public class LoginActivity extends Activity {
 	private EditText username, password, ip1, ip2, ip3, ip4, duankou;
 	private PreferenceService preferenceService;
 	private Map<String, String> map;
+	private static final String flag ="Login";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -83,10 +84,10 @@ public class LoginActivity extends Activity {
 		preferenceService = new PreferenceService(getApplicationContext());
 		map = new HashMap<>();
 		map = preferenceService.getPreferences();
-		ip1.setText(map.get("ip1"));
-		ip2.setText(map.get("ip2"));
-		ip3.setText(map.get("ip3"));
-		ip4.setText(map.get("ip4"));
+		ip1.setText(map.get("loginip1"));
+		ip2.setText(map.get("loginip2"));
+		ip3.setText(map.get("loginip3"));
+		ip4.setText(map.get("loginip4"));
 		duankou.setText(map.get("duankouip"));
 	}
 
@@ -100,7 +101,7 @@ public class LoginActivity extends Activity {
 				+ ip4.getText().toString();
 		webhead = "http://" + localIP + ":" + duankou.getText().toString()+ "/web/";
 		try {
-			preferenceService.save(ip1.getText().toString(),ip2.getText().toString(),ip3.getText().toString(),ip4.getText().toString());
+			preferenceService.save(ip1.getText().toString(),ip2.getText().toString(),ip3.getText().toString(),ip4.getText().toString(),flag);
 			preferenceService.save(duankou.getText().toString());
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -174,12 +175,12 @@ public class LoginActivity extends Activity {
 					Intent intent = new Intent(LoginActivity.this, Menu.class);
 					intent.putExtra("username", username.getText().toString().trim());
 					intent.putExtra("password", password.getText().toString().trim());
-					String[] titles = new String[]{"温度管理", "湿度管理", "装卸货", "药品管理", "消息中心", "巡更", "查仓", "查仓记录", "RFID写入"};
+					String[] titles = new String[]{"温度管理", "湿度管理", "装卸货", "药品管理", "消息中心", "巡更", "查仓", "查仓记录", "RFID写入", "手工通风控制"};
 					String moudles = "";
 					Constants.username = username.getText().toString().trim();
 					//权限模块筛选
 					String msg = lr.getReturnMsgMap().getMsg();
-					msg=msg+"PDARFID写入";
+					msg=msg+"PDARFID写入"+"PDA手工通风控制";
 					for(String str:titles){
 						if(msg.contains("PDA"+str)){
 							moudles+=str+",";
