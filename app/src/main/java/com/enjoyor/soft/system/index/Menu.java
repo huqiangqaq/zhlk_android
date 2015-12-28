@@ -57,8 +57,8 @@ public class Menu extends Activity {
         gridView = (GridView) findViewById(R.id.mGridView);
         // 生成动态数组，并且转入数据
         ArrayList<HashMap<String, Object>> lstImageItem = new ArrayList<HashMap<String, Object>>();
-        titles = new String[]{"温度管理", "湿度管理", "装卸货", "药品管理", "消息中心", "巡更",
-                "查仓", "查仓记录", "RFID写入","手工通风控制"};
+        titles = new String[]{"温度管理", "湿度管理", "装卸货", /*"药品管理",*/ "消息中心", "巡更",
+                "查仓", "查仓记录", "RFID写入","手工通风"};
         String ts = getIntent().getStringExtra("moudles");
         if (ts != null && ts.contains(",")) {
             titles = ts.split(",");
@@ -78,8 +78,8 @@ public class Menu extends Activity {
                 ids[i] = R.drawable.shidu_icon;
             } else if ("装卸货".equalsIgnoreCase(titles[i])) {
                 ids[i] = R.drawable.huo_icon;
-            } else if ("药品管理".equalsIgnoreCase(titles[i])) {
-                ids[i] = R.drawable.yao_icon;
+//            } else if ("药品管理".equalsIgnoreCase(titles[i])) {
+//                ids[i] = R.drawable.yao_icon;
             } else if ("消息中心".equalsIgnoreCase(titles[i])) {
                 ids[i] = R.drawable.xiaoxi_icon;
             } else if ("巡更".equalsIgnoreCase(titles[i])) {
@@ -90,7 +90,7 @@ public class Menu extends Activity {
                 ids[i] = R.drawable.xungeng_icon;
             } else if ("RFID写入".equalsIgnoreCase(titles[i])) {
                 ids[i] = R.drawable.xungeng_icon;
-            } else if ("手工通风控制".equalsIgnoreCase(titles[i])) {
+            } else if ("手工通风".equalsIgnoreCase(titles[i])) {
                 ids[i] = R.drawable.xungeng_icon;
             }
         }
@@ -130,17 +130,17 @@ public class Menu extends Activity {
                     intent.putExtra("password", password);
                     startActivity(intent);
 
-                } else if (titles[position].equalsIgnoreCase("药品管理")) {
-                    // 药品管理
-                    ComponentName cn = new ComponentName(
-                            "com.example.tiaoxingscan",
-                            "com.enjoyor.drugmanager.activity.XzChoice");
-                    Intent intent = new Intent();
-                    intent.putExtra("userName", username);
-                    intent.putExtra("password", password);
-                    intent.putExtra("webhead", Constants.getWebHead(Menu.this));
-                    intent.setComponent(cn);
-                    startActivity(intent);
+//                } else if (titles[position].equalsIgnoreCase("药品管理")) {
+//                    // 药品管理
+//                    ComponentName cn = new ComponentName(
+//                            "com.example.tiaoxingscan",
+//                            "com.enjoyor.drugmanager.activity.XzChoice");
+//                    Intent intent = new Intent();
+//                    intent.putExtra("userName", username);
+//                    intent.putExtra("password", password);
+//                    intent.putExtra("webhead", Constants.getWebHead(Menu.this));
+//                    intent.setComponent(cn);
+//                    startActivity(intent);
                 } else if (titles[position].equalsIgnoreCase("消息中心")) {
                     // 消息中心
                     Intent intent = new Intent(Menu.this, MergeActivity.class);
@@ -176,14 +176,14 @@ public class Menu extends Activity {
                 } else if (titles[position].equalsIgnoreCase("RFID写入")) {
                     startActivity(new Intent(Menu.this,
                             Activity_writerfid.class));
-                } else if (titles[position].equalsIgnoreCase("手工通风控制")) {
+                } else if (titles[position].equalsIgnoreCase("手工通风")) {
                     startActivity(new Intent(Menu.this, TongFengActivity.class));
                 }
             }
         });
         ab = new AlertDialog.Builder(Menu.this);
         ab.setTitle("选择类型").setSingleChoiceItems(
-                new String[]{"温度管理", "湿度管理", "装卸货管理", "药品管理"}, -1,
+                new String[]{"温度管理", "湿度管理", "装卸货管理", /*"药品管理"*/}, -1,
                 new OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -206,17 +206,17 @@ public class Menu extends Activity {
                     intent.putExtra("userName", username);
                     intent.putExtra("password", password);
                     startActivity(intent);
-                } else if (item == 3) {
-                    // 药品管理
-                    ComponentName cn = new ComponentName(
-                            "com.example.tiaoxingscan",
-                            "com.example.tiaoxingscan.XzChoice");
-                    Intent intent = new Intent();
-                    intent.putExtra("userName", username);
-                    intent.putExtra("password", password);
-                    intent.putExtra("webhead", Constants.WEBURIHEAD);
-                    intent.setComponent(cn);
-                    startActivity(intent);
+//                } else if (item == 3) {
+//                    // 药品管理
+//                    ComponentName cn = new ComponentName(
+//                            "com.example.tiaoxingscan",
+//                            "com.example.tiaoxingscan.XzChoice");
+//                    Intent intent = new Intent();
+//                    intent.putExtra("userName", username);
+//                    intent.putExtra("password", password);
+//                    intent.putExtra("webhead", Constants.WEBURIHEAD);
+//                    intent.setComponent(cn);
+//                    startActivity(intent);
                 } else {
                     Toast.makeText(Menu.this, "请选择类别", Toast.LENGTH_LONG)
                             .show();

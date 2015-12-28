@@ -138,22 +138,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tongfeng_ip1"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:inputType="number"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tongfeng_ip2"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:inputType="number"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tongfeng_ip3"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:inputType="number"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tongfeng_ip4"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:inputType="number"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

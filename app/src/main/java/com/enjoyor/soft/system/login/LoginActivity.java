@@ -175,12 +175,12 @@ public class LoginActivity extends Activity {
 					Intent intent = new Intent(LoginActivity.this, Menu.class);
 					intent.putExtra("username", username.getText().toString().trim());
 					intent.putExtra("password", password.getText().toString().trim());
-					String[] titles = new String[]{"温度管理", "湿度管理", "装卸货", "药品管理", "消息中心", "巡更", "查仓", "查仓记录", "RFID写入", "手工通风控制"};
+					String[] titles = new String[]{"温度管理", "湿度管理", "装卸货",  "消息中心", "巡更", "查仓", "查仓记录", "RFID写入", "手工通风"};
 					String moudles = "";
 					Constants.username = username.getText().toString().trim();
 					//权限模块筛选
 					String msg = lr.getReturnMsgMap().getMsg();
-					msg=msg+"PDARFID写入"+"PDA手工通风控制";
+					msg=msg+"PDARFID写入"+"PDA手工通风";
 					for(String str:titles){
 						if(msg.contains("PDA"+str)){
 							moudles+=str+",";
