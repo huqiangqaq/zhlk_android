@@ -23,9 +23,13 @@ import com.enjoyor.soft.R;
 import com.enjoyor.soft.common.Constants;
 import com.enjoyor.soft.common.HttpUtils;
 import com.enjoyor.soft.common.NetCheck;
+import com.enjoyor.soft.product.TongFeng.Utils.PreferenceService;
 import com.enjoyor.soft.product.car.model.LoginReturn;
 import com.enjoyor.soft.system.index.Menu;
 import com.google.gson.Gson;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Copyright (c) by hutuanle
@@ -46,6 +50,8 @@ public class LoginActivity extends Activity {
 	private CheckBox showpass;
 	ProgressDialog pd;
 	private EditText username, password, ip1, ip2, ip3, ip4, duankou;
+	private PreferenceService preferenceService;
+	private Map<String, String> map;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -74,17 +80,31 @@ public class LoginActivity extends Activity {
 				}
 			}
 		});
+		preferenceService = new PreferenceService(getApplicationContext());
+		map = new HashMap<>();
+		map = preferenceService.getPreferences();
+		ip1.setText(map.get("ip1"));
+		ip2.setText(map.get("ip2"));
+		ip3.setText(map.get("ip3"));
+		ip4.setText(map.get("ip4"));
+		duankou.setText(map.get("duankouip"));
 	}
 
 
 	// 提交
 	int item = -1;// 选择项
 	public void login(View view) {
+
 		localIP = ip1.getText().toString() + "." + ip2.getText().toString()
 				+ "." + ip3.getText().toString() + "."
 				+ ip4.getText().toString();
 		webhead = "http://" + localIP + ":" + duankou.getText().toString()+ "/web/";
-		
+		try {
+			preferenceService.save(ip1.getText().toString(),ip2.getText().toString(),ip3.getText().toString(),ip4.getText().toString());
+			preferenceService.save(duankou.getText().toString());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		Constants.WEBURIHEAD = webhead;// 请求头
 		Constants.putWebHead(context, webhead);
 		Constants.LOGINURI = webhead + "loginAjax.htm?";// 登录链接头
@@ -130,30 +150,31 @@ public class LoginActivity extends Activity {
 		protected String doInBackground(String... params) {
 			// TODO Auto-generated method stub
 			String result = HttpUtils.getJsonFromHttp(params[0]);
-			Log.i("123++++++++",result.toString());
+			Log.i("123++++++++", result.toString());
 			return result;
 		}
 
 		@Override
 		protected void onPostExecute(String result) {
 			// TODO Auto-generated method stub
-			pd.dismiss();pd = null;
+			pd.dismiss();
+			pd = null;
 			Gson gson = new Gson();
-			System.out.println("login result:"+result);
-			if(result==null||Constants.HTTP_ERROR_INFO.equals(result)){
+			System.out.println("login result:" + result);
+			if (result == null || Constants.HTTP_ERROR_INFO.equals(result)) {
 				showToast(Constants.HTTP_ERROR_INFO);
 				return;
 			}
-			Log.i("five", "login_result:"+result);
+			Log.i("five", "login_result:" + result);
 			LoginReturn lr = gson.fromJson(result, LoginReturn.class);
-			if(lr!=null){
+			if (lr != null) {
 				String mark = lr.getReturnMsgMap().getReturnAjaxState();
 				if ("3".equals(mark)) {
 					// 登陆成功
 					Intent intent = new Intent(LoginActivity.this, Menu.class);
 					intent.putExtra("username", username.getText().toString().trim());
 					intent.putExtra("password", password.getText().toString().trim());
-					String[] titles = new String[]{"温度管理","湿度管理","装卸货","药品管理","消息中心","巡更","查仓","查仓记录","RFID写入"};
+					String[] titles = new String[]{"温度管理", "湿度管理", "装卸货", "药品管理", "消息中心", "巡更", "查仓", "查仓记录", "RFID写入"};
 					String moudles = "";
 					Constants.username = username.getText().toString().trim();
 					//权限模块筛选

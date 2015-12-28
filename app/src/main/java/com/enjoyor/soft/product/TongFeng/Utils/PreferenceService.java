@@ -16,6 +16,13 @@ public class PreferenceService {
         this.context = context;
     }
 
+    public void save(String duankouip){
+        SharedPreferences preferences = context.getSharedPreferences("IP",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("duankou",duankouip);
+        editor.commit();
+    }
+
     /**
      *
      * 保存参数
@@ -47,6 +54,7 @@ public class PreferenceService {
         maps.put("ip2", preference.getString("ip2", ""));
         maps.put("ip3", preference.getString("ip3", ""));
         maps.put("ip4", preference.getString("ip4", ""));
+        maps.put("duankouip",preference.getString("duankou",""));
         return maps;
     }
 }
