@@ -63,7 +63,7 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
             public void onClick(View v) {
                 TONGFENG_IP = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString() + ":7000/getBarnDevList/";
                 TONGFENG_IP2 = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString()+":7000/";
-                Log.i("123456+++++++++++++",TONGFENG_IP2);
+                //Log.i("123456+++++++++++++",TONGFENG_IP2);
                 CangKuIP = "http://" + tongfeng_ip1.getText().toString() + "." + tongfeng_ip2.getText().toString() + "." + tongfeng_ip3.getText().toString() + "." + tongfeng_ip4.getText().toString() + ":7000/getAllBarnNameList.html";
                 try {
                     //保存上一次输入的IP地址
@@ -71,28 +71,28 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                Log.i("1233++++++++++++", CangKuIP);
+               // Log.i("1233++++++++++++", CangKuIP);
                 //获取仓库数目
                 HttpUtil.getJsonFromNet(getApplicationContext(), CangKuIP, new HttpUtil.GetJsonCallBack() {
                     @Override
                     public void callback(String jsonStr) {
-                        Log.i("1234+++++++++++++++++", jsonStr);
+                       // Log.i("1234+++++++++++++++++", jsonStr);
                         Cangku = JsonUtil.parseCangkuJson(spilt(jsonStr));
-                        Log.i("12345+++++++++++", spilt(jsonStr));
+                        //Log.i("12345+++++++++++", spilt(jsonStr));
                         arrayAdapter = new SpinnerAdapter(getApplicationContext(), android.R.layout.simple_spinner_item, Cangku);
                         spinner.setAdapter(arrayAdapter);
-                        HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[0], new HttpUtil.GetJsonCallBack() {
-                            @Override
-                            public void callback(String jsonStr) {
-                                //解析数据
-                                initData(spilt(jsonStr));
-                            }
-                        });
+//                        HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[0], new HttpUtil.GetJsonCallBack() {
+//                            @Override
+//                            public void callback(String jsonStr) {
+//                                //解析数据
+//                                initData(spilt(jsonStr));
+//                            }
+//                        });
                         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                                 cangkuNum = position;
-                                Log.i("123+++++++++++++++", position + "," + spinner.getSelectedItemPosition());
+                               // Log.i("123+++++++++++++++", position + "," + spinner.getSelectedItemPosition());
                                 HttpUtil.getJsonFromNet(getApplicationContext(), TONGFENG_IP + Cangku[position], new HttpUtil.GetJsonCallBack() {
                                     @Override
                                     public void callback(String jsonStr) {
@@ -146,7 +146,7 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
         tongfeng_ip3.setText(map.get("ip3").toString());
         tongfeng_ip4.setText(map.get("ip4").toString());
 
-        //spinner.setSelection(0, true);
+        spinner.setSelection(0, true);
 
 
         //设置刷新时的动画的颜色

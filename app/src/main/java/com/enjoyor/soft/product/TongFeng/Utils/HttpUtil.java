@@ -52,6 +52,7 @@ public class HttpUtil {
         httpUtils.send(HttpRequest.HttpMethod.GET, url, new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
+                Log.i("test+++++++",responseInfo.result);
                 jsonCallBack.callback(responseInfo.result);
             }
 
@@ -75,7 +76,7 @@ public class HttpUtil {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
                 jsonCallBack.callback(responseInfo.result);
-                Log.i("NET",responseInfo.result);
+               // Log.i("NET",responseInfo.result);
                 
             }
 

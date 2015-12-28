@@ -94,7 +94,7 @@ public class MyAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         tongFeng = tongFengList.get(position);
-        Log.i("123++++++++++", tongFeng.getTfBarnDevicesNo().toString());
+       // Log.i("123++++++++++", tongFeng.getTfBarnDevicesNo().toString());
         viewHolder.etName.setText(tongFeng.getChineseName().toString());   //设备编号
         viewHolder.tv_Status.setText(tongFeng.getStatus1().toString());
         viewHolder.tv_Msg.setText(tongFeng.getMsg().toString());
@@ -131,8 +131,8 @@ public class MyAdapter extends BaseAdapter {
                     params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
                     params.addBodyParameter("Status1", "1");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    Log.i("NET++", tongFengList.get(position).getBarnNo()
-                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl());
+                    //Log.i("NET++", tongFengList.get(position).getBarnNo()
+                           // + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl());
                     HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
                             + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
                         @Override
@@ -155,8 +155,8 @@ public class MyAdapter extends BaseAdapter {
                     params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
                     params.addBodyParameter("Status1", "0");
                     params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    Log.i("NET++", tongFengList.get(position).getBarnNo()
-                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl());
+                   // Log.i("NET++", tongFengList.get(position).getBarnNo()
+                        //    + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl());
                     HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
                             + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
                         @Override
