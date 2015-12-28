@@ -9,7 +9,6 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -17,8 +16,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.enjoyor.soft.R;
-import com.enjoyor.soft.common.Constants;
-import com.enjoyor.soft.common.HttpUtils;
 import com.enjoyor.soft.product.TongFeng.Adapter.CloseAdapter;
 import com.enjoyor.soft.product.TongFeng.Adapter.MyAdapter;
 import com.enjoyor.soft.product.TongFeng.Adapter.OpenAdapter;
@@ -141,10 +138,10 @@ public class TongFengActivity extends Activity implements View.OnClickListener {
         //取出存储的IP地址
         map = new HashMap<>();
         map = preferenceService.getPreferences();
-        tongfeng_ip1.setText(map.get("ip1").toString());
-        tongfeng_ip2.setText(map.get("ip2").toString());
-        tongfeng_ip3.setText(map.get("ip3").toString());
-        tongfeng_ip4.setText(map.get("ip4").toString());
+        tongfeng_ip1.setText(map.get("ip1"));
+        tongfeng_ip2.setText(map.get("ip2"));
+        tongfeng_ip3.setText(map.get("ip3"));
+        tongfeng_ip4.setText(map.get("ip4"));
 
         spinner.setSelection(0, true);
 
