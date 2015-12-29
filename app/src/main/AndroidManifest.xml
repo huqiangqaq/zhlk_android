@@ -47,7 +47,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".product.xungeng.ChaCangRecordActivity" />
         <activity
@@ -105,9 +104,8 @@
         </activity>
         <!-- NFC -->
 
-        <activity android:name=".product.TongFeng.TongFengActivity">
-
-        </activity>
+        <activity android:name=".product.TongFeng.TongFengActivity"></activity>
+        <activity android:name=".product.TongFeng.TestActivity"></activity>
     </application>
 
 </manifest>
