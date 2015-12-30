@@ -104,8 +104,8 @@
         </activity>
         <!-- NFC -->
 
-        <activity android:name="com.enjoyor.soft.product.TongFeng.TongFengActivity" >
-        </activity>
+        <activity android:name="com.enjoyor.soft.product.TongFeng.TongFengActivity" />
+        <activity android:name="com.enjoyor.soft.product.TongFeng.TestActivity" />
     </application>
 
 </manifest>

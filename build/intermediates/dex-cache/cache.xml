@@ -1,3 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\AndroidStudioProjects\zhlk_android\app\libs\fastjson-1.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fbcf8415e32859b473b336e5ac6422ee69b1185b">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\fastjson-1.2.4_0fdc39f186a35888e4705a228df2fd245d454293.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3_64fa35ddd346aa7c34094222c49ad08c65aa76de.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-21.0.3_eed19e656e1cba55f10fd5a35afbf78e7773045a.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\zhlk_android\app\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14_9bc9538972bebe74b191e551fe7701ed0ce6ad71.jar" />
+    </item>
+    <item
+        jar="D:\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3_4f7ce737aad7638a17a8462138906f3e2f55c68b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\zhlk_android\app\libs\android-async-http-1.4.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.4_8953e94bc11491998e3d8a1b0c59757817bf751e.jar" />
+    </item>
+    <item
+        jar="C:\Users\强\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.3\91ac0b4c3a38b721c7548baa239950f23b65b56e\gson-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="91ac0b4c3a38b721c7548baa239950f23b65b56e">
+        <dex dex="D:\AndroidStudioProjects\zhlk_android\app\build\intermediates\pre-dexed\debug\gson-2.2.3_fcf8687b3a1937aaf210ad13ee4d471589c9d520.jar" />
+    </item>
+
+</items>

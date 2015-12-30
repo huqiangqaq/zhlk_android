@@ -394,7 +394,7 @@ public class StoreTask extends Activity {
 	/**
 	 * @author Administrator
 	 * 接收NFC消息：
-	 * dongqiwu
+	 * dongqiwu在
 	 * */
 	private class MainNfcHandler extends Handler {
     @Override
