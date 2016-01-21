@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.enjoyor.soft.R;
 import com.enjoyor.soft.product.TongFeng.Entity.TongFeng;
@@ -85,7 +86,7 @@ public class MyAdapter extends BaseAdapter {
         // Log.i("123++++++++++", tongFeng.getTfBarnDevicesNo().toString());
         viewHolder.etName.setText(tongFeng.getChineseName().toString());   //设备编号
         viewHolder.tv_Status.setText(tongFeng.getStatus1().toString());
-        viewHolder.tv_Msg.setText(tongFeng.getMsg().toString());
+        viewHolder.tv_Msg.setText(tongFeng.getReMoteControl());
         if (map.get(position)) {
             viewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
         } else {
@@ -95,9 +96,9 @@ public class MyAdapter extends BaseAdapter {
          * 组件初始化
          */
         if ("就地".equals(tongFeng.getReMoteControl())) {
-            viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_05);
-        } else {
             viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_06);
+        } else {
+            viewHolder.ib_distance.setBackgroundResource(R.drawable.icon_05);
         }
         viewHolder.ib_swift.setTag(position);
         //给BUTTON设置点击事件，添加点击事件后listview将失去焦点 ，需要把button的焦点去掉
@@ -105,54 +106,59 @@ public class MyAdapter extends BaseAdapter {
         finalViewHolder.ib_swift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("瞬间爆炸");
-                //int position1 = (int) v.getTag();
-                if (map.get(position)) {
+                if ("就地".equals(tongFeng.getReMoteControl())){
+                    Toast.makeText(context,"当前为就地状态，通风窗口不可操作!",Toast.LENGTH_SHORT).show();
+                }else {
+                    if (map.get(position)) {
 
-                    //上传参数给服务器，需加上仓库编号
+                        //上传参数给服务器，需加上仓库编号
 //                        JSONStringer vehicle = new JSONStringer().object().key("BarnNo").value(tongFengList.get(position).getBarnNo()).key("tfBarnDevicesNo").value(tongFengList.get(position).getBarnName())
 //
 //                                .key("Status1").value("0")
 //                                .key("ReMoteControl").value(tongFengList.get(position).getReMoteControl()).endObject();
-                    RequestParams params = new RequestParams();
-                    params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
-                    params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
-                    params.addBodyParameter("Status1", "1");
-                    params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    //Log.i("NET++", tongFengList.get(position).getBarnNo()
-                    // + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl());
-                    HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
-                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
-                        @Override
-                        public void callback(String jsonStr) {
-                            finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
-                        }
-                    });
-                    map.put(position, false);
+                        RequestParams params = new RequestParams();
+                        params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
+                        params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
+                        params.addBodyParameter("Status1", "1");
+                        params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
+                        //Log.i("NET++", tongFengList.get(position).getBarnNo()
+                        // + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl());
+                        HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
+                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "1" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
+                            @Override
+                            public void callback(String jsonStr) {
+                                finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_05);
+                            }
+                        });
+                        map.put(position, false);
 
-                } else {
-                    //int position1 = (int) v.getTag();
+                    } else {
+                        //int position1 = (int) v.getTag();
 //                        JSONStringer vehicle = new JSONStringer().object().key("BarnNo").value(tongFengList.get(position).getBarnNo()).key("name").value(tongFengList.get(position).getBarnName())
 //
 //                                .key("开关到位").value("1")
 //                                .key("远程到位").value(tongFengList.get(position).getReMoteControl()).endObject();
-                    RequestParams params = new RequestParams();
-                    params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
-                    params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
-                    params.addBodyParameter("Status1", "0");
-                    params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
-                    // Log.i("NET++", tongFengList.get(position).getBarnNo()
-                    //    + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl());
-                    HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
-                            + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
-                        @Override
-                        public void callback(String jsonStr) {
-                            finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
-                        }
-                    });
-                    map.put(position, true);
-                    //"http://192.168.1.177:7000/OpenClose/"
+                        RequestParams params = new RequestParams();
+                        params.addBodyParameter("BarnNo", tongFengList.get(position).getBarnNo());
+                        params.addBodyParameter("tfBarnDevicesNo", tongFengList.get(position).getTfBarnDevicesNo());
+                        params.addBodyParameter("Status1", "0");
+                        params.addBodyParameter("ReMoteControl", tongFengList.get(position).getReMoteControl());
+                        // Log.i("NET++", tongFengList.get(position).getBarnNo()
+                        //    + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl());
+                        HttpUtil.GetJsonFromNet(context, tongfengIP + "OpenClose/" + tongFengList.get(position).getBarnNo()
+                                + "/" + tongFengList.get(position).getTfBarnDevicesNo() + "/" + "0" + "/" + tongFengList.get(position).getReMoteControl(), params, new HttpUtil.GetJsonCallBack() {
+                            @Override
+                            public void callback(String jsonStr) {
+                                finalViewHolder.ib_swift.setBackgroundResource(R.drawable.icon_06);
+                            }
+                        });
+                        map.put(position, true);
+                        //"http://192.168.1.177:7000/OpenClose/"
+                    }
                 }
+                System.out.println("瞬间爆炸");
+                //int position1 = (int) v.getTag();
+
             }
         });
         return convertView;

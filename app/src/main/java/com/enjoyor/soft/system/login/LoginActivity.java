@@ -53,6 +53,7 @@ public class LoginActivity extends Activity {
 	private PreferenceService preferenceService;
 	private Map<String, String> map;
 	private static final String flag ="Login";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -84,6 +85,8 @@ public class LoginActivity extends Activity {
 		preferenceService = new PreferenceService(getApplicationContext());
 		map = new HashMap<>();
 		map = preferenceService.getPreferences();
+		username.setText(map.get("UserName"));
+		password.setText(map.get("PassWord"));
 		ip1.setText(map.get("loginip1"));
 		ip2.setText(map.get("loginip2"));
 		ip3.setText(map.get("loginip3"));
@@ -101,6 +104,7 @@ public class LoginActivity extends Activity {
 				+ ip4.getText().toString();
 		webhead = "http://" + localIP + ":" + duankou.getText().toString()+ "/web/";
 		try {
+			preferenceService.save(username.getText().toString(),password.getText().toString());
 			preferenceService.save(ip1.getText().toString(),ip2.getText().toString(),ip3.getText().toString(),ip4.getText().toString(),flag);
 			preferenceService.save(duankou.getText().toString());
 		} catch (Exception e) {

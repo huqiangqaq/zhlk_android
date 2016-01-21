@@ -42,11 +42,8 @@
         <activity
             android:name=".system.login.LoginActivity"
             android:label="智慧粮库">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".product.xungeng.ChaCangRecordActivity" />
         <activity
@@ -73,7 +70,13 @@
         <activity android:name=".product.chacang.ChooseNOactivity" />
         <activity android:name=".product.chacang.ChacangActivity" />
         <activity android:name=".product.xungeng.XunGengActivity" />
-        <activity android:name=".product.nfcwirte.Activity_writerfid" />
+        <activity android:name=".product.nfcwirte.Activity_writerfid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
         <activity android:name=".product.car.activity.RightContent" />
 
         <!-- NFC引用2015-07-24  xiandqw -->

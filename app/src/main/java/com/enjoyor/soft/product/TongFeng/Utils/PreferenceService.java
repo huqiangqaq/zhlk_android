@@ -25,6 +25,12 @@ public class PreferenceService {
         editor.commit();
     }
 
+    public void save(String UserName,String PassWord){
+        editor.putString("UserName",UserName);
+        editor.putString("PassWord",PassWord);
+        editor.commit();
+    }
+
     /**
      *
      * 保存参数
@@ -71,6 +77,8 @@ public class PreferenceService {
         maps.put("loginip2",preference.getString("loginip2",""));
         maps.put("loginip3",preference.getString("loginip3",""));
         maps.put("loginip4",preference.getString("loginip4",""));
+        maps.put("UserName",preference.getString("UserName",""));
+        maps.put("PassWord",preference.getString("PassWord",""));
         return maps;
     }
 }

@@ -9,6 +9,7 @@ import android.nfc.Tag;
 import android.nfc.tech.MifareClassic;
 import android.nfc.tech.NfcV;
 import android.os.Build;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -41,6 +42,10 @@ public class control_nfc {
 						try {
 							mfc.connect();
 							int bSec = mfc.blockToSector(address);
+							Log.i("ichoiceTest", "Addr in readSingOneBlock is : " + address);
+							Log.i("ichoiceTest", "Sector is : "+bSec);
+							Log.i("ichoiceTest", "Total Sector is : "+mfc.getSectorCount());
+							Log.i("ichoiceTest", mfc.toString());
 							if (bSec < mfc.getSectorCount()) {
 								if (mfc.authenticateSectorWithKeyA(bSec, passw)) {
 									byte[] data = mfc.readBlock(address);

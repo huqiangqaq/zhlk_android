@@ -59,7 +59,7 @@ public class XunGengActivity extends Activity {
 
 	private static final String BARCODE_ACTION = "com.barcode.sendBroadcast";
 	private static final String BARCODE_PARAM = "BARCODE";
-	
+	private static boolean isSuccess = false;
 	
 	@Override
 	protected void onResume() {
@@ -102,6 +102,7 @@ public class XunGengActivity extends Activity {
 		setContentView(R.layout.fragment_xungeng);
 		code = (EditText) findViewById(R.id.editxungencode);
 		// 二维码签到扫描
+
 		findViewById(R.id.btn_qd).setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -112,6 +113,10 @@ public class XunGengActivity extends Activity {
 				//String gbkcode="";	
 				if (!"".equals(code.getText().toString())) { 
 					Uploadxungen(code.getText().toString());
+					if (isSuccess){
+						code.setText("");
+						XunGengActivity.this.finish();
+					}
 				} 
 				else 
 				{
@@ -345,9 +350,12 @@ public class XunGengActivity extends Activity {
 											.getReturnAjaxState())) {
 										showToast(mjr.getReturnMsgMap()
 												.getMsg());
+										isSuccess = true;
+
 									} else {
 										showToast(mjr.getReturnMsgMap()
 												.getMsg());
+										isSuccess = true;
 									}
 								} else {
 									showToast("服务器返回异常,请重试");

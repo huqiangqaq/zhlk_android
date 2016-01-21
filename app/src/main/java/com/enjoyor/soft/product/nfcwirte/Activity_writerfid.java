@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
@@ -85,6 +86,7 @@ public class Activity_writerfid extends Activity implements OnClickListener {
 		case R.id.bstnfcread:
 			String code = Nfcreceive.readSigOneBlock(Constants.PASSWORD,
 					Constants.ADD);
+			Log.i("sdfsf",code);
 			if (!"".equals(code)) {
 				textreadcode.setText(code);
 			} else {

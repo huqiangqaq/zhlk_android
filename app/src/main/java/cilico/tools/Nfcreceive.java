@@ -38,6 +38,7 @@ public class Nfcreceive extends Activity {
 		}
 		if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(getIntent().getAction())) {
 			System.out.println("ACTION_TAG_DISCOVERED");
+			Log.i("sdfs",getIntent().toString());
 			processIntent(getIntent());
 			return;
 		}
@@ -106,6 +107,7 @@ public class Nfcreceive extends Activity {
 	 * 读取标签块号：
 	 * ***/
 	public static String readSigOneBlock(String password, int address) {
+		Log.i("sffdsf",m_intent.toString());
 		return control_nfc.readSingOneBlock(m_intent, password, address);
 	}
 	/**
