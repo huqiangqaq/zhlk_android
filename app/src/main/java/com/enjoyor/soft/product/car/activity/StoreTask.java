@@ -67,6 +67,7 @@ public class StoreTask extends Activity {
 	String rfidGuid=null;//寻卡成功标志
 	String rfidCode = null;//改为全局定义：接收读到的卡号
     private Handler mnfcHandler = new MainNfcHandler();
+	private static final String TAG = StoreTask.class.getSimpleName();
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		menu.add(1001, 100, 1, "清空数据");
@@ -207,12 +208,12 @@ public class StoreTask extends Activity {
 		//再次显示时候重新查询本地数据库
 		super.onResume();
 		dbService.del();//删除已经完成作业的车辆
-		System.out.println("storetask onresume");
+		Log.i(TAG, "OnResume");
 		msgs = dbService.queryList();
 //		adapter.notifyDataSetChanged();
 		adapter = new MlistAdapter(this, msgs);
 		mListView.setAdapter(adapter);
-		Log.i("five", "msgs.toString() "+msgs.toString());
+		Log.i(TAG, "msgs.toString() "+msgs.toString());
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, final View view,

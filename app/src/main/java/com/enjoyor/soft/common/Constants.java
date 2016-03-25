@@ -39,7 +39,7 @@ public class Constants {
 	public static String URL_CHECK_RFID = "cargoAjax!checkRFID.htm?rfidCode=";
 	public static String URL_MSG = "personalinfoAjax!receive.htm";
 	public static String URL_ChaCang_record = "temperatureAjax.htm";
-	
+	public static String URL_ASSAYINFO = "";
 	public static String getWebHead(Context context){
 		String head = context.getSharedPreferences("head", 0).getString("head", "");
 		return head;

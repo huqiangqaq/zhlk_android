@@ -95,7 +95,8 @@
 
                     <EditText
                         android:id="@+id/ip1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:inputType="phone"
                         android:text="183"
@@ -109,7 +110,8 @@
 
                     <EditText
                         android:id="@+id/ip2"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:inputType="phone"
                         android:text="247"
@@ -123,7 +125,8 @@
 
                     <EditText
                         android:id="@+id/ip3"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:inputType="phone"
                         android:text="179"
@@ -137,7 +140,8 @@
 
                     <EditText
                         android:id="@+id/ip4"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:inputType="phone"
                         android:text="238"

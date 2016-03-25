@@ -42,12 +42,18 @@
         <activity
             android:name="com.enjoyor.soft.system.login.LoginActivity"
             android:label="智慧粮库" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name="com.enjoyor.soft.product.xungeng.ChaCangRecordActivity" />
         <activity
             android:name="com.enjoyor.soft.product.car.activity.StoreTask"
             android:alwaysRetainTaskState="true"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask" >
+        </activity>
         <activity
             android:name="com.enjoyor.soft.product.megcenter.activity.MsgCenterActivity"
             android:launchMode="singleTask" />
@@ -61,7 +67,8 @@
 
         <activity
             android:name="com.enjoyor.soft.product.megcenter.activity.MergeActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask" >
+        </activity>
         <activity
             android:name="com.enjoyor.soft.product.megcenter.activity.MsgWeiDuActivity"
             android:launchMode="singleTask" />
@@ -69,13 +76,9 @@
         <activity android:name="com.enjoyor.soft.product.chacang.ChacangActivity" />
         <activity android:name="com.enjoyor.soft.product.xungeng.XunGengActivity" />
         <activity android:name="com.enjoyor.soft.product.nfcwirte.Activity_writerfid" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="com.enjoyor.soft.product.car.activity.RightContent" />
+        <activity android:name="com.enjoyor.soft.product.car.activity.RightContent" >
+        </activity>
 
         <!-- NFC引用2015-07-24  xiandqw -->
         <activity

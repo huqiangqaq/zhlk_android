@@ -27,6 +27,7 @@ import cilico.tools.Nfcreceive;
 import com.enjoyor.soft.R;
 import com.enjoyor.soft.common.Constants;
 import com.enjoyor.soft.common.HttpUtils;
+import com.enjoyor.soft.product.car.model.AssayInfo;
 import com.enjoyor.soft.product.car.model.CarInfoClient;
 import com.enjoyor.soft.product.car.model.JsonReturn;
 import com.enjoyor.soft.product.car.service.CarService;
@@ -54,7 +55,7 @@ public class RightContent extends Activity {
 	ProgressDialog pd;
 	Context context = this;
 	String doorNumber = "";
-
+	//private TextView cur_rongzhong,cur_water,cur_chonghai,cur_zhazhi,cur_notcomplete,cur_color;      //新增化验信息
 	// *************************/
 	// 定义接收的hander(dongqiwu)：
 	String rfidGuid = null;// 寻卡成功标志
@@ -88,7 +89,7 @@ public class RightContent extends Activity {
 		if (!TextUtils.isEmpty(cic.getDoorNumber()))
 			liangcang_doornumber.setText(doormap.get(cic.getDoorNumber()));
 		status_record = cic.getStatus();
-
+//		new AssayInfoStatus().execute(Constants.WEBURIHEAD+Constants.URL_ASSAYINFO+rfidCode);
 		// cur_status.setText(statusNum2Str(status_record));
 		// 显示车辆状态
 		cur_status.setText(statusNum2Str(cic.getType(), cic.getStatus()));
@@ -280,6 +281,38 @@ public class RightContent extends Activity {
 		}
 	}
 
+	//异步获取化验信息
+	class AssayInfoStatus extends AsyncTask<String,Integer,String>{
+
+		@Override
+		protected String doInBackground(String... params) {
+			String result = HttpUtils.getJsonFromHttp(params[0]);
+
+			return result;
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			if (result == null) {
+				showToast("网络异常,稍后再试!");
+				startActivity(new Intent(RightContent.this, StoreTask.class));
+			} else {
+				// 判断网络异常
+				if (Constants.HTTP_ERROR_INFO.equals(result)) {
+					showToast(result);
+					return;
+				}
+				AssayInfo assayInfo = new Gson().fromJson(result, AssayInfo.class);
+//				cur_rongzhong.setText(assayInfo.getMcur_rongzhong());
+//				cur_water.setText(assayInfo.getMcur_color());
+//				cur_zhazhi.setText(assayInfo.getMcur_zhazhi());
+//				cur_chonghai.setText(assayInfo.getMcur_chonghai());
+//				cur_notcomplete.setText(assayInfo.getMcur_notcomplete());
+//				cur_color.setText(assayInfo.getMcur_color());
+			}
+		}
+	}
+
 	// 初始化组件
 	private void findviews() {
 		carNumber = (TextView) findViewById(R.id.car_number);
@@ -289,6 +322,14 @@ public class RightContent extends Activity {
 		cur_status = (TextView) findViewById(R.id.cur_status);
 		managerBtn = (Button) findViewById(R.id.managerbtn);
 		liangcang_doornumber = (TextView) findViewById(R.id.liangcang_doornumber);
+//		cur_rongzhong = (TextView) findViewById(R.id.cur_rongzhong);
+//		cur_water = (TextView) findViewById(R.id.cur_water);
+//		cur_chonghai = (TextView) findViewById(R.id.cur_chonghai);
+//		cur_zhazhi = (TextView) findViewById(R.id.cur_zhazhi);
+//		cur_notcomplete = (TextView) findViewById(R.id.cur_notcomplete);
+//		cur_color = (TextView) findViewById(R.id.cur_color);
+
+
 
 	}
 
