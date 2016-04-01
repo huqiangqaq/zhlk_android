@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:2:1-119:12
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:2:1-112:12
 	package
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml
@@ -79,7 +79,7 @@ ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:35:30-85
 application
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:37:5-117:19
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:37:5-110:19
 MERGED from [com.android.support:support-v4:21.0.3] D:\Android\Android Projects\zhlk_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 	android:label
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:40:9-29
@@ -110,7 +110,7 @@ ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:51:19-72
 activity#com.enjoyor.soft.product.car.activity.StoreTask
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:52:9-57:20
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:52:9-55:56
 	android:launchMode
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:55:13-44
 	android:alwaysRetainTaskState
@@ -118,118 +118,122 @@ ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:53:13-59
 activity#com.enjoyor.soft.product.megcenter.activity.MsgCenterActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:59:9-61:47
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:56:9-58:47
 	android:launchMode
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:61:13-44
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:58:13-44
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:60:13-73
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:57:13-73
 activity#com.enjoyor.soft.product.wenshidu.activity.Wendu
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:62:9-69
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:59:9-69
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:62:19-66
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:59:19-66
 activity#com.enjoyor.soft.product.wenshidu.activity.Shidu
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:63:9-69
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:60:9-69
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:63:19-66
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:60:19-66
 activity#com.enjoyor.soft.system.index.Menu
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:64:9-55
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:61:9-55
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:64:19-52
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:61:19-52
 activity#com.htl.Zxing.decoding.CaptureActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:65:9-75
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:62:9-75
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:65:19-72
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:62:19-72
 service#com.enjoyor.soft.product.car.service.StoreMsgService
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:67:9-72
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:64:9-72
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:67:18-69
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:64:18-69
 service#com.enjoyor.soft.product.xungeng.XunGengActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:68:9-68
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:65:9-68
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:68:18-65
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:65:18-65
 activity#com.enjoyor.soft.product.megcenter.activity.MergeActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:70:9-73:20
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:67:9-69:56
+	android:launchMode
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:68:13-69
+activity#com.enjoyor.soft.product.megcenter.activity.MsgWeiDuActivity
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:70:9-72:47
 	android:launchMode
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:72:13-44
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:71:13-69
-activity#com.enjoyor.soft.product.megcenter.activity.MsgWeiDuActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:74:9-76:47
-	android:launchMode
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:76:13-44
-	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:75:13-72
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:71:13-72
 activity#com.enjoyor.soft.product.chacang.ChooseNOactivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:77:9-70
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:73:9-70
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:77:19-67
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:73:19-67
 activity#com.enjoyor.soft.product.chacang.ChacangActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:78:9-69
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:74:9-69
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:78:19-66
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:74:19-66
 activity#com.enjoyor.soft.product.xungeng.XunGengActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:79:9-69
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:75:9-69
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:79:19-66
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:75:19-66
 activity#com.enjoyor.soft.product.nfcwirte.Activity_writerfid
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:80:9-82:24
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:76:9-82
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:80:19-70
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:76:19-70
 activity#com.enjoyor.soft.product.car.activity.RightContent
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:83:9-85:24
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:77:9-80
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:83:19-68
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:77:19-68
 activity#cilico.tools.Nfcreceive
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:88:9-112:20
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:80:9-104:20
 	android:configChanges
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:90:13-63
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:82:13-63
 	android:theme
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:91:13-50
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:83:13-50
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:89:13-51
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:81:13-51
 intent-filter#com.lql.service.ServiceDemo
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:92:13-94:29
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:84:13-86:29
 action#com.lql.service.ServiceDemo
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:93:17-70
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:85:17-70
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:93:25-67
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:85:25-67
 intent-filter#android.nfc.action.NDEF_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:95:13-99:29
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:87:13-91:29
 action#android.nfc.action.NDEF_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:96:17-77
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:88:17-77
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:96:25-74
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:88:25-74
 data
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:98:17-55
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:90:17-55
 	android:mimeType
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:98:23-52
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:90:23-52
 intent-filter#android.intent.category.DEFAULT+android.nfc.action.TAG_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:100:13-104:29
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:92:13-96:29
 action#android.nfc.action.TAG_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:101:17-76
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:93:17-76
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:101:25-73
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:93:25-73
 category#android.intent.category.DEFAULT
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:103:17-76
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:95:17-76
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:103:27-73
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:95:27-73
 intent-filter#android.nfc.action.TECH_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:105:13-107:29
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:97:13-99:29
 action#android.nfc.action.TECH_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:106:17-77
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:98:17-77
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:106:25-74
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:98:25-74
 meta-data#android.nfc.action.TECH_DISCOVERED
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:109:13-111:59
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:101:13-103:59
 	android:resource
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:111:17-56
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:103:17-56
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:110:17-66
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:102:17-66
 activity#com.enjoyor.soft.product.TongFeng.TongFengActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:115:9-80
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:107:9-71
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:115:19-68
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:107:19-68
 activity#com.enjoyor.soft.product.TongFeng.TestActivity
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:116:9-76
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:108:9-67
 	android:name
-		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:116:19-64
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:108:19-64
+activity#com.enjoyor.soft.product.cyweight.CYWeight
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:109:9-72
+	android:name
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:109:19-60

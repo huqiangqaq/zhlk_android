@@ -25,6 +25,7 @@ import com.enjoyor.soft.product.TongFeng.TongFengActivity;
 import com.enjoyor.soft.product.car.activity.StoreTask;
 import com.enjoyor.soft.product.car.service.StoreMsgService;
 import com.enjoyor.soft.product.chacang.ChacangActivity;
+import com.enjoyor.soft.product.cyweight.CYWeight;
 import com.enjoyor.soft.product.megcenter.activity.MergeActivity;
 import com.enjoyor.soft.product.nfcwirte.Activity_writerfid;
 import com.enjoyor.soft.product.wenshidu.activity.Shidu;
@@ -58,7 +59,7 @@ public class Menu extends Activity {
         // 生成动态数组，并且转入数据
         ArrayList<HashMap<String, Object>> lstImageItem = new ArrayList<HashMap<String, Object>>();
         titles = new String[]{"温度管理", "湿度管理", "装卸货", /*"药品管理",*/ "消息中心", "巡更",
-                "查仓", "查仓记录", "RFID写入","手工通风"};
+                "查仓", "查仓记录", "RFID写入","手工通风","抽样称重"};
         String ts = getIntent().getStringExtra("moudles");
         if (ts != null && ts.contains(",")) {
             titles = ts.split(",");
@@ -92,6 +93,8 @@ public class Menu extends Activity {
                 ids[i] = R.drawable.xungeng_icon;
             } else if ("手工通风".equalsIgnoreCase(titles[i])) {
                 ids[i] = R.drawable.xungeng_icon;
+            }else if ("抽样称重".equalsIgnoreCase(titles[i])){
+                ids[i] = R.drawable.huo_icon;
             }
         }
         for (int i = 0; i < ids.length; i++) {
@@ -178,6 +181,8 @@ public class Menu extends Activity {
                             Activity_writerfid.class));
                 } else if (titles[position].equalsIgnoreCase("手工通风")) {
                     startActivity(new Intent(Menu.this, TongFengActivity.class));
+                }else if (titles[position].equalsIgnoreCase("抽样称重")){
+                    startActivity(new Intent(Menu.this, CYWeight.class));
                 }
             }
         });
