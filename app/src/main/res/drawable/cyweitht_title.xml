@@ -4,8 +4,10 @@
     <solid android:color="#ffffffff"/>
 
     <!--矩形的圆角面积-->
-    <stroke android:color="@color/gray" android:width="1dp"/>
+    <stroke android:color="@color/gray" android:width="1dp"
+        android:dashWidth="0dp"/>
     <corners android:radius="6dp"/>
+
 
 
 </shape>

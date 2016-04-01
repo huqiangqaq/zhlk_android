@@ -42,11 +42,7 @@
         <activity
             android:name=".system.login.LoginActivity"
             android:label="智慧粮库">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".product.xungeng.ChaCangRecordActivity" />
         <activity
@@ -106,7 +102,13 @@
 
         <activity android:name=".product.TongFeng.TongFengActivity" />
         <activity android:name=".product.TongFeng.TestActivity" />
-        <activity android:name=".product.cyweight.CYWeight"></activity>
+        <activity android:name=".product.cyweight.CYWeight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

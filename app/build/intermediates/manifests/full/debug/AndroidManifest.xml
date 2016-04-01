@@ -42,11 +42,6 @@
         <activity
             android:name="com.enjoyor.soft.system.login.LoginActivity"
             android:label="智慧粮库" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.enjoyor.soft.product.xungeng.ChaCangRecordActivity" />
         <activity
@@ -106,7 +101,13 @@
 
         <activity android:name="com.enjoyor.soft.product.TongFeng.TongFengActivity" />
         <activity android:name="com.enjoyor.soft.product.TongFeng.TestActivity" />
-        <activity android:name="com.enjoyor.soft.product.cyweight.CYWeight" />
+        <activity android:name="com.enjoyor.soft.product.cyweight.CYWeight" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
