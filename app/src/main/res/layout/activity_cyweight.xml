@@ -4,10 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.enjoyor.soft.product.cyweight.CYWeight">
 
     <TextView
@@ -19,24 +15,28 @@
 
     <RadioGroup
         android:id="@+id/rb_tab_bar"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/cyweitht_title"
         android:gravity="center"
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/rb_tab_btn1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/cadetblue"
+            android:background="@drawable/cyweight_btn"
             android:button="@null"
             android:gravity="center"
-            android:text="一号车位" />
+            android:text="一号车位"
+            android:checked="true"/>
 
         <RadioButton
+            android:background="@drawable/cyweight_btn"
+            android:id="@+id/rb_tab_btn2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -44,5 +44,276 @@
             android:gravity="center"
             android:text="二号车位" />
     </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="车牌号:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_num"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="浙A88S36"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="品种:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_category"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="成品米"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="称重次数:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_count"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20次"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="单次包数:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_singlecount"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="4次" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="平均毛重:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_averageWieght"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="25.05KG" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="皮重:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_pizhong"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0.05KG" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="皮重:"/>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_averageAure"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="25.00KG" />
+        </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="详情列表"
+            android:background="@drawable/btn_detail"
+            android:id="@+id/btn_detail"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/cyweight_ll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="总共包数:"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20包"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="毛重:"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20KG"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="除皮:"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20包"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="净重:"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20KG"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_detail"
+        android:text="结束抽样"/>
+
+
+    </LinearLayout>
+
