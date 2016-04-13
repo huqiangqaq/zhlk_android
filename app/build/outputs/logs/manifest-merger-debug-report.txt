@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:2:1-114:12
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:2:1-115:12
 	package
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml
@@ -79,7 +79,7 @@ ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:35:30-85
 application
-ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:37:5-112:19
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:37:5-113:19
 MERGED from [com.android.support:support-v4:21.0.3] D:\Android\Android Projects\zhlk_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 	android:label
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:40:9-29
@@ -237,3 +237,7 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:109:17-77
 	android:name
 		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:109:27-74
+service#com.enjoyor.soft.product.cyweight.Service.LongRunningService
+ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:112:9-79
+	android:name
+		ADDED from D:\Android\Android Projects\zhlk_android\app\src\main\AndroidManifest.xml:112:18-77
