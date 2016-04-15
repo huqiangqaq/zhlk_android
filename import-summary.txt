@@ -17,47 +17,25 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
-* ic_launcher-web.png
-* proguard-project.txt
-
-Replaced Jars with Dependencies:
---------------------------------
-The importer recognized the following .jar files as third party
-libraries and replaced them with Gradle dependencies instead. This has
-the advantage that more explicit version information is known, and the
-libraries can be updated automatically. However, it is possible that
-the .jar file in your project was of an older version than the
-dependency we picked, which could render the project not compileable.
-You can disable the jar replacement in the import wizard and try again:
-
-android-support-v4.jar => com.android.support:support-v4:21.0.3
-gson-2.2.3.jar => com.google.code.gson:gson:2.2.3
-
-Potentially Missing Dependency:
--------------------------------
-When we replaced the following .jar files with a Gradle dependency, we
-inferred the dependency version number from the filename. This
-specific version may not actually be available from the repository.
-If you get a build error stating that the dependency is missing, edit
-the version number to for example "+" to pick up the latest version
-instead. (This may require you to update your code if the library APIs
-have changed.)
-
-gson-2.2.3.jar => version 2.2.3 in com.google.code.gson:gson:2.2.3
+* Doxyfile
+* LICENSE-2.0.txt
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => app\src\main\AndroidManifest.xml
-* assets\ => app\src\main\assets
-* libs\android-async-http-1.4.4.jar => app\libs\android-async-http-1.4.4.jar
-* libs\armeabi\libscan-tools.so => app\src\main\jniLibs\armeabi\libscan-tools.so
-* libs\armeabi\libtiny-tools.so => app\src\main\jniLibs\armeabi\libtiny-tools.so
-* res\ => app\src\main\res\
-* src\ => app\src\main\java\
-* test\ => app\src\main\java\
+* AndroidManifest.xml => andBase\src\main\AndroidManifest.xml
+* libs\android-support-v13.jar => andBase\libs\android-support-v13.jar
+* libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar => andBase\libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar
+* proguard-project.txt => andBase\proguard-project.txt
+* res\ => andBase\src\main\res\
+* src\ => andBase\src\main\java\
+* src\com\ab\util\image\arrow.png => andBase\src\main\resources\com\ab\util\image\arrow.png
+* src\com\ab\util\image\crop_big.png => andBase\src\main\resources\com\ab\util\image\crop_big.png
+* src\com\ab\util\image\crop_small.png => andBase\src\main\resources\com\ab\util\image\crop_small.png
+* src\com\ab\view\chart\package.html => andBase\src\main\resources\com\ab\view\chart\package.html
+* src\com\ab\view\slidingmenu\package.html => andBase\src\main\resources\com\ab\view\slidingmenu\package.html
 
 Next Steps:
 -----------

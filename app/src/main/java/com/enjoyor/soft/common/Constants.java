@@ -40,6 +40,10 @@ public class Constants {
 	public static String URL_MSG = "personalinfoAjax!receive.htm";
 	public static String URL_ChaCang_record = "temperatureAjax.htm";
 	public static String URL_ASSAYINFO = "";
+
+
+	//抽样称重界面接口信息
+	public static String ITEM_URL = "http://192.168.8.116:7000/PDA/getDetailByRfidCode/";
 	public static String getWebHead(Context context){
 		String head = context.getSharedPreferences("head", 0).getString("head", "");
 		return head;
