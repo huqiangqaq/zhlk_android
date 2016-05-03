@@ -11,7 +11,14 @@ import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.enjoyor.soft.common.Constants;
+import com.enjoyor.soft.product.cyweight.Utils.JsonUtil;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
 import java.util.Date;
+
+import okhttp3.Call;
 
 /**
  * Created by huqiang on 2016/4/12 10:59.
@@ -25,20 +32,27 @@ public class LongRunningService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
+            String rfidCode = intent.getStringExtra("carnum");
                 //后台访问数据，获得weight
                 Log.d("LongRunningService","execute at "+new Date().toString());
-            }
-        }).start();
-        AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        int time = 5*1000;
-        long triggerAtTime = SystemClock.elapsedRealtime()+time;
-        Intent i = new Intent("com.android.broadcast.RECEIVER_ACTION");
-        i.putExtra("data",Math.random()*10+"");
-        PendingIntent pi = PendingIntent.getBroadcast(this,0,i,PendingIntent.FLAG_UPDATE_CURRENT);
-        manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,triggerAtTime,pi);
+                OkHttpUtils.get().url(Constants.WEIGHT_URL+rfidCode).build().execute(new StringCallback() {
+                    @Override
+                    public void onError(Call call, Exception e) {
+
+                    }
+
+                    @Override
+                    public void onResponse(String response) {
+                        String weight = JsonUtil.pareWeight(response);
+                        AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+                        int time = 2*1000;
+                        long triggerAtTime = SystemClock.elapsedRealtime()+time;
+                        Intent i = new Intent("com.android.broadcast.RECEIVER_ACTION");
+                        i.putExtra("data",weight);
+                        PendingIntent pi = PendingIntent.getBroadcast(LongRunningService.this,0,i,PendingIntent.FLAG_UPDATE_CURRENT);
+                        manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,triggerAtTime,pi);
+                    }
+                });
         return super.onStartCommand(intent, flags, startId);
     }
 

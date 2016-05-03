@@ -4,16 +4,36 @@
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\huo_icon.png"
     },
     {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\delete.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\delete.png"
+    },
+    {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xiaoxi_icon.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\xiaoxi_icon.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cy_end.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\cy_end.png"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\back.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\back.png"
+    },
+    {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\shidu_icon.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\shidu_icon.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\delete2.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\delete2.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\detail.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\detail.png"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\yao_icon.png",
@@ -22,6 +42,18 @@
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xungeng_icon.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\xungeng_icon.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_06.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\bg_06.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cyweight_del.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\cyweight_del.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\button_bg.png",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable-hdpi\\button_bg.png"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\wendu_icon.png",

@@ -47,13 +47,20 @@
         <activity
             android:name="com.enjoyor.soft.product.car.activity.StoreTask"
             android:alwaysRetainTaskState="true"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask" >
+        </activity>
         <activity
             android:name="com.enjoyor.soft.product.megcenter.activity.MsgCenterActivity"
             android:launchMode="singleTask" />
         <activity android:name="com.enjoyor.soft.product.wenshidu.activity.Wendu" />
         <activity android:name="com.enjoyor.soft.product.wenshidu.activity.Shidu" />
-        <activity android:name="com.enjoyor.soft.system.index.Menu" />
+        <activity android:name="com.enjoyor.soft.system.index.Menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.htl.Zxing.decoding.CaptureActivity" />
 
         <service android:name="com.enjoyor.soft.product.car.service.StoreMsgService" />
@@ -68,7 +75,8 @@
         <activity android:name="com.enjoyor.soft.product.chacang.ChooseNOactivity" />
         <activity android:name="com.enjoyor.soft.product.chacang.ChacangActivity" />
         <activity android:name="com.enjoyor.soft.product.xungeng.XunGengActivity" />
-        <activity android:name="com.enjoyor.soft.product.nfcwirte.Activity_writerfid" />
+        <activity android:name="com.enjoyor.soft.product.nfcwirte.Activity_writerfid" >
+        </activity>
         <activity android:name="com.enjoyor.soft.product.car.activity.RightContent" />
 
         <!-- NFC引用2015-07-24  xiandqw -->
@@ -101,12 +109,9 @@
 
         <activity android:name="com.enjoyor.soft.product.TongFeng.TongFengActivity" />
         <activity android:name="com.enjoyor.soft.product.TongFeng.TestActivity" />
-        <activity android:name="com.enjoyor.soft.product.cyweight.CYWeight" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name="com.enjoyor.soft.product.cyweight.CYWeight"
+            android:screenOrientation="portrait" >
         </activity>
 
         <service android:name="com.enjoyor.soft.product.cyweight.Service.LongRunningService" />

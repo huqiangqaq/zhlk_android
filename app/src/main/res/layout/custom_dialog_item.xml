@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:background="@color/ivory">
 
     <TextView
         android:layout_marginLeft="15dp"
@@ -27,12 +28,13 @@
         android:id="@+id/tv_weight"
         android:text="400kg"
         android:textSize="18sp"/>
-    <Button
+    <ImageView
         android:layout_alignParentRight="true"
         android:layout_gravity="end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="删除"
+        android:background="@drawable/cyweight_del"
+        android:layout_marginRight="10dp"
         android:id="@+id/btn_del"/>
 
 

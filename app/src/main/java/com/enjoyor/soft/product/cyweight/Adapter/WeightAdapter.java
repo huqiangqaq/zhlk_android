@@ -1,11 +1,13 @@
 package com.enjoyor.soft.product.cyweight.Adapter;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.enjoyor.soft.R;
@@ -21,6 +23,14 @@ import java.util.zip.Inflater;
 public class WeightAdapter extends BaseAdapter {
     private Context mcontext;
     private List<Detail> list = new ArrayList<>();
+    private OnListDel onListDel;
+    public interface OnListDel{
+        void OnDel(int size);
+    }
+
+    public void setOnListDel(OnListDel onListDel) {
+        this.onListDel = onListDel;
+    }
 
     public WeightAdapter(Context mcontext, List<Detail> list) {
         this.mcontext = mcontext;
@@ -51,7 +61,7 @@ public class WeightAdapter extends BaseAdapter {
             holder.tv_num = (TextView) convertView.findViewById(R.id.tv_num);
             holder.tv_single = (TextView) convertView.findViewById(R.id.tv_single);
             holder.tv_weight = (TextView) convertView.findViewById(R.id.tv_weight);
-            holder.btn_del = (Button) convertView.findViewById(R.id.btn_del);
+            holder.btn_del = (ImageView) convertView.findViewById(R.id.btn_del);
             convertView.setTag(holder);
         }else {
             holder = (viewHolder) convertView.getTag();
@@ -64,6 +74,7 @@ public class WeightAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 list.remove(position);
+                onListDel.OnDel(list.size());
                 notifyDataSetChanged();
             }
         });
@@ -73,6 +84,6 @@ public class WeightAdapter extends BaseAdapter {
         TextView tv_num;
         TextView tv_single;
         TextView tv_weight;
-        Button btn_del;
+        ImageView btn_del;
     }
 }

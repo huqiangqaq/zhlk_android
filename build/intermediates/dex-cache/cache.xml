@@ -1,3 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\build\intermediates\exploded-aar\com.zhy\okhttputils\2.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c811a2469be089868522b8740e35f3686596e4be">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.zhy-okhttputils-2.2.0_ff17e43b165b0c7fbb1d0e77fda110d97937d49c\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d0da10bb1c1db835b45b36ebb68be38abbcf62ad">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_3e7593fef3ed5eb0fa62cb9b0acb9d2f74e67338\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_4417a537b6e4377d1bd4e84d4d3c017d64877dac\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\83916\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_347bb1c4751cb9ede3fd50321ea6f0e623c90705\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_a2d7c6cee06365565aa829774299a9cdddb90789\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\83916\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.0.1\b34c1f2d993044656e87f88970b6818e99e886ba\okhttp-3.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.0.1_451a0804e34289bda33dd12c54bc9fcf3c23967c\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\libs\android-async-http-1.4.4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-async-http-1.4.4_8f0c412a355a08ca0f44ed2b6bf0dfc355c4dd34\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_aa16b3cf885393ef74ba8407c65bcf20627dd05b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\83916\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.3\91ac0b4c3a38b721c7548baa239950f23b65b56e\gson-2.2.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="91ac0b4c3a38b721c7548baa239950f23b65b56e">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.3_5f269b2ed9657dbb7aa2c95e61ec220f7a39f295\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\libs\xUtils-2.6.14.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.6.14_be475ed5f0d049ecff64e8f69dc017b6cb665c1d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6dc775d557ce532b2446c7e0a776ef6cb9f25c7e">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_694b83731673c54ffe5e99c6b69486268612deb3\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\Android Projects\zhlk_android\app\libs\fastjson-1.2.4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fbcf8415e32859b473b336e5ac6422ee69b1185b">
+        <dex dex="D:\Android\Android Projects\zhlk_android\app\build\intermediates\transforms\dex\debug\folders\1000\2\fastjson-1.2.4_6d44f11c6260b98947e4f56b83b5282b01bcd71d\classes.dex" />
+    </item>
+
+</items>

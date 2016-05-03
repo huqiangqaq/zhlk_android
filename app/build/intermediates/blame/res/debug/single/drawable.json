@@ -20,6 +20,10 @@
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\line.png"
     },
     {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cyweight_btn_selector.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\cyweight_btn_selector.xml"
+    },
+    {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cbk_logo.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\cbk_logo.png"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chengliang_info.png",
         "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\chengliang_info.png"
+    },
+    {
+        "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\weightdel_selector.xml",
+        "source": "D:\\Android\\Android Projects\\zhlk_android\\app\\src\\main\\res\\drawable\\weightdel_selector.xml"
     },
     {
         "merged": "D:\\Android\\Android Projects\\zhlk_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tittle.png",

@@ -43,7 +43,10 @@ public class Constants {
 
 
 	//抽样称重界面接口信息
-	public static String ITEM_URL = "http://192.168.8.116:7000/PDA/getDetailByRfidCode/";
+	public static String ITEM_URL = "http://122.224.207.26:7000/PDA/getDetailByRfidCode/";
+	public static String WEIGHT_URL = "http://122.224.207.26:7000/PDA/getWeight/";
+	public static String WEIGHT_SINGLE = "http://122.224.207.26:7000/PDA/postSingleWeightRecord/";
+	public static String WEIGHT_END = "http://122.224.207.26:7000/PDA/postALLWeightRecord/";
 	public static String getWebHead(Context context){
 		String head = context.getSharedPreferences("head", 0).getString("head", "");
 		return head;

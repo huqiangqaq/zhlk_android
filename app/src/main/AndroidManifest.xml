@@ -50,13 +50,21 @@
         <activity
             android:name=".product.car.activity.StoreTask"
             android:alwaysRetainTaskState="true"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask">
+
+        </activity>
         <activity
             android:name=".product.megcenter.activity.MsgCenterActivity"
             android:launchMode="singleTask" />
         <activity android:name=".product.wenshidu.activity.Wendu" />
         <activity android:name=".product.wenshidu.activity.Shidu" />
-        <activity android:name=".system.index.Menu" />
+        <activity android:name=".system.index.Menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.htl.Zxing.decoding.CaptureActivity" />
 
         <service android:name=".product.car.service.StoreMsgService" />
@@ -71,7 +79,9 @@
         <activity android:name=".product.chacang.ChooseNOactivity" />
         <activity android:name=".product.chacang.ChacangActivity" />
         <activity android:name=".product.xungeng.XunGengActivity" />
-        <activity android:name=".product.nfcwirte.Activity_writerfid"></activity>
+        <activity android:name=".product.nfcwirte.Activity_writerfid">
+
+        </activity>
         <activity android:name=".product.car.activity.RightContent"></activity>
 
         <!-- NFC引用2015-07-24  xiandqw -->
@@ -104,12 +114,9 @@
 
         <activity android:name=".product.TongFeng.TongFengActivity" />
         <activity android:name=".product.TongFeng.TestActivity" />
-        <activity android:name=".product.cyweight.CYWeight">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".product.cyweight.CYWeight"
+            android:screenOrientation="portrait">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <service android:name=".product.cyweight.Service.LongRunningService"/>
     </application>
